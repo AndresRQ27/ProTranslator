@@ -2,12 +2,20 @@
 %traducir(Espanol, Ingles):- .
 
 %%Conjuga el verbo regular segun la raiz que posea
-verbo_conjugador(InfinitivoRegular, Tiempo, Cantidad, Persona, Conjugado):-
+verboRegular_conjugador(InfinitivoRegular, Tiempo, Cantidad, Persona, Conjugado):-
 	sub_atom(InfinitivoRegular, _, 2, 0, Terminacion),
 	atom_concat(Raiz, Terminacion, InfinitivoRegular),
 	verboRegular(Terminacion, Tiempo, Cantidad, Persona, Conjugacion),
 	atom_concat(Raiz, Conjugacion, Conjugado),
 	!.
+
+verboRegular_desconjugador(InfinitivoRegular, Tiempo, Cantidad, Persona, Conjugado):-
+	atom_concat(Raiz, Conjugacion, Conjugado),
+	verboRegular(Terminacion, Tiempo, Cantidad, Persona, Conjugacion),
+	atom_concat(Raiz, Terminacion, InfinitivoRegular),
+	verboRegular_conjugador(InfinitivoRegular, Tiempo, Cantidad, Persona, Conjugado).
+	%TODO: agregar verificacion con la base de datos implementada para obtener el infinitivo correcto.
+	
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%Seccion de Bases de Datos
