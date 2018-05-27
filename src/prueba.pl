@@ -1,6 +1,16 @@
 %%Espanol es la oracion en ese idioma, de igual manera con el Ingles
 %traducir(Espanol, Ingles):- .
 
+%%Conjuga el verbo regular segun la raiz que posea
+verbo_conjugador(InfinitivoRegular, Tiempo, Cantidad, Persona, Conjugado):-
+	sub_atom(InfinitivoRegular, _, 2, 0, Terminacion),
+	atom_concat(Raiz, Terminacion, InfinitivoRegular),
+	verboRegular(Terminacion, Tiempo, Cantidad, Persona, Conjugacion),
+	atom_concat(Raiz, Conjugacion, Conjugado),
+	!.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%Seccion de Bases de Datos
 oracion(S0,S):- sintagma_nominal(S0,S1),
 sintagma_verbal(S1,S).
 
@@ -87,13 +97,4 @@ verboRegular('ir', 'futuro', 'singular', 'tercera', 'irá').
 verboRegular('ir', 'futuro', 'plural', 'primera', 'iremos').
 verboRegular('ir', 'futuro', 'plural', 'segunda', 'irán').
 verboRegular('ir', 'futuro', 'plural', 'tercera', 'irán').
-
-
-verbo_conjugador(InfinitivoRegular, Tiempo, Cantidad, Persona, Conjugado):-
-	sub_atom(InfinitivoRegular, _, 2, 0, Terminacion),
-	atom_concat(Raiz, Terminacion, InfinitivoRegular),
-	verboRegular(Terminacion, Tiempo, Cantidad, Persona, Conjugacion),
-	atom_concat(Raiz, Conjugacion, Conjugado),
-	!.
-
 
