@@ -12,10 +12,15 @@ verboRegular_desconjugador(InfinitivoRegular, Tiempo, Cantidad, Persona, Conjuga
 %%%%%%%%%%%%%%%%%%%%%%Sección para traducir de inglés a español.
 
 %TODO: Preguntas, ¿adverbios?, nombre y caso sin traducción
+
+traducir([S0|S], Resultado):-
+	S = [],
+	traduccion(Resultado, S0),
+	!.
 	
-traducir(S0, S, Resultado):- 
+traducir(S0, Resultado):- 
 	noPredicado(S0,S1, Resultado1), 
-	predicado(S1,S, Resultado2),
+	predicado(S1,[], Resultado2),
 	append(Resultado1, Resultado2, Resultado),
 	!.
 
@@ -29,17 +34,33 @@ predicado([Ingles|S], S, [Español]):-
 	traduccion(Español, Ingles).
 predicado(S0, S, Resultado):- 
 	sintagma_nominal(S0, S, Resultado).
+predicado([Resultado|S], S, Resultado). %Caso en que no se pueda traducir
+
 
 sintagma_nominal(Cantidad, Persona, [Ingles|S], S, [Español]):- %Caso de pronombre
 	traduccion(Español, Ingles),
 	pronombre(Cantidad, Persona, Español).
-sintagma_nominal(Cantidad, Persona, [_|S0], S, [Articulo, Español]):-
+sintagma_nominal(Cantidad, Persona, [_|S0], S, [Articulo, Español]):- %Caso de tercera persona con artículo
 	articulo(Genero, Cantidad, Articulo),
 	nombre(Genero, Cantidad, S0, S, Español),
 	Persona = 'tercera'.
-sintagma_nominal([_|S0], S, [Articulo, Español]):- %Sintagma para el predicado
+sintagma_nominal(Cantidad, Persona, S0, S, [Español]):- %Caso de tercera persona sin artículo
+	nombre(_, Cantidad, S0, S, Español),
+	Persona = 'tercera'.
+sintagma_nominal(_, _, [Sujeto|S], S, [Sujeto]):-
+	[Verbo|_] = S,
+	verbo(_, _, [Verbo], [], Verificador), 	%Verificador sirve para saber si el verbo fue traducido, debe haber un verbo por el orden de la oración.
+	write(Verbo),write(Verificador),
+	dif([Verbo], Verificador).			%Ej: Sarah eats apple. Si es un nombre propio siempre le va a seguir un verbo. Solo singular.
+sintagma_nominal(_, _, [Articulo|S0], S, [Articulo, Ingles]):- %Caso en que no se pueda traducir
+	[Ingles|S] = S0.
+	
+sintagma_nominal([_|S0], S, [Articulo, Español]):- %Sintagma para el predicado con artículo
 	articulo(Genero, Cantidad, Articulo),
 	nombre(Genero, Cantidad, S0, S, Español).
+sintagma_nominal([Articulo|S0], S, [Articulo, Ingles]):- %Caso en que no se pueda traducir el predicado
+	[Ingles|S] = S0.
+
 
 nombre(Genero, Cantidad, [Ingles|S], S, EspañolPlural):- %Caso de ser plural (-es)
 	sub_atom(Ingles, 0, _, 2, Base),
@@ -57,6 +78,7 @@ nombre(Genero, Cantidad, [Ingles|S], S, Español):- %Caso de ser singular
 	traduccion(Español, Ingles),
 	nombre(Genero, Español),
 	Cantidad = 'singular'.
+
 
 verbo(Cantidad, Persona, [Will|S0], S, [Conjugacion]):- %Caso de ser futuro
 	Will = 'will',
@@ -76,17 +98,19 @@ verbo(Cantidad, Persona, [Ingles|S], S, [Conjugacion]):- %Caso de ser pasado (ve
 verbo(Cantidad, Persona, [Ingles|S], S, [Conjugacion]):- %Caso de ser pasado (version -d)
 	sub_atom(Ingles, 0, _, 1, Base), %Sobra el -ed, obteniendo la base del verbo
 	atom_concat(Base, UltimaLetra, Ingles),
-	UltimaLetra = 'd',
+	UltimaLetra = 'd', %Para diferenciar entre S de presente y D de pasado
 	traduccion(Español, Base),
 	averiguarConjugacion(Español, 'pasado', Cantidad, Persona, Conjugacion).
 	
-verbo(Cantidad, Persona, [Ingles|S], S, [Conjugacion]):- %Caso de ser presente con 's' (He, She, It)
+verbo(_, _, [Ingles|S], S, [Conjugacion]):- %Caso de ser presente con 's' (He, She, It)
 	sub_atom(Ingles, 0, _, 1, Base),
 	traduccion(Español, Base),
-	averiguarConjugacion(Español, 'presente', Cantidad, Persona, Conjugacion).
+	averiguarConjugacion(Español, 'presente', 'singular', 'tercera', Conjugacion).
 verbo(Cantidad, Persona, [Ingles|S], S, [Conjugacion]):- %Caso de ser presente sin 's' (Todos excepto He, She, It)
 	traduccion(Español, Ingles),
 	averiguarConjugacion(Español, 'presente', Cantidad, Persona, Conjugacion).
+	
+verbo(_, _, [Ingles|S], S, [Ingles]). %Caso en el que el verbo no tenga traducción
 
 %%Prueba si el verbo a conjugar está en la lista de verbos irregulares.
 averiguarConjugacion(Infinitivo, Tiempo, Cantidad, Persona, Conjugacion):-
