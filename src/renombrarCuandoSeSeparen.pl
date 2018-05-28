@@ -11,7 +11,7 @@ verboRegular_desconjugador(InfinitivoRegular, Tiempo, Cantidad, Persona, Conjuga
 
 %%%%%%%%%%%%%%%%%%%%%%Sección para traducir de inglés a español.
 
-%TODO: Preguntas, ¿adverbios?, nombre y caso sin traducción
+%TODO: Preguntas, ¿adverbios?, nombre
 
 traducir([S0|S], Resultado):-
 	S = [],
