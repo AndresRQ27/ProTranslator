@@ -11,7 +11,82 @@ verboRegular_desconjugador(InfinitivoRegular, Tiempo, Cantidad, Persona, Conjuga
 
 %%%%%%%%%%%%%%%%%%%%%%Sección para traducir de inglés a español.
 
-%TODO: Preguntas y ¿adverbios?
+%TODO: Preguntas, ¿adverbios?, nombre y caso sin traducción
+	
+traducir(S0, S, Resultado):- 
+	noPredicado(S0,S1, Resultado1), 
+	predicado(S1,S, Resultado2),
+	append(Resultado1, Resultado2, Resultado),
+	!.
+
+noPredicado(S0, S, Resultado):- 
+	sintagma_nominal(Cantidad, Persona, S0, S1, Resultado1),
+	verbo(Cantidad, Persona, S1, S, Resultado2),
+	append(Resultado1, Resultado2, Resultado).
+	
+predicado([], [], []).
+predicado([Ingles|S], S, [Español]):- 
+	traduccion(Español, Ingles).
+predicado(S0, S, Resultado):- 
+	sintagma_nominal(S0, S, Resultado).
+
+sintagma_nominal(Cantidad, Persona, [Ingles|S], S, [Español]):- %Caso de pronombre
+	traduccion(Español, Ingles),
+	pronombre(Cantidad, Persona, Español).
+sintagma_nominal(Cantidad, Persona, [_|S0], S, [Articulo, Español]):-
+	articulo(Genero, Cantidad, Articulo),
+	nombre(Genero, Cantidad, S0, S, Español),
+	Persona = 'tercera'.
+sintagma_nominal([_|S0], S, [Articulo, Español]):- %Sintagma para el predicado
+	articulo(Genero, Cantidad, Articulo),
+	nombre(Genero, Cantidad, S0, S, Español).
+
+nombre(Genero, Cantidad, [Ingles|S], S, EspañolPlural):- %Caso de ser plural (-es)
+	sub_atom(Ingles, 0, _, 2, Base),
+	traduccion(EspañolSingular, Base),
+	nombre(Genero, EspañolSingular),
+	atom_concat(EspañolSingular, 's', EspañolPlural),
+	Cantidad = 'plural'.
+nombre(Genero, Cantidad, [Ingles|S], S, EspañolPlural):- %Caso de ser plural (-s)
+	sub_atom(Ingles, 0, _, 1, Base),
+	traduccion(EspañolSingular, Base),
+	nombre(Genero, EspañolSingular),
+	atom_concat(EspañolSingular, 's', EspañolPlural),
+	Cantidad = 'plural'.
+nombre(Genero, Cantidad, [Ingles|S], S, Español):- %Caso de ser singular
+	traduccion(Español, Ingles),
+	nombre(Genero, Español),
+	Cantidad = 'singular'.
+
+verbo(Cantidad, Persona, [Will|S0], S, [Conjugacion]):- %Caso de ser futuro
+	Will = 'will',
+	S0 = [Ingles|S],
+	traduccion(Español, Ingles),
+	averiguarConjugacion(Español, 'futuro', Cantidad, Persona, Conjugacion).
+	
+verbo(Cantidad, Persona, [Ingles|S], S, [Conjugacion]):- %Caso de ser pasado (versión -ied)
+	sub_atom(Ingles, 0, _, 3, BaseIncompleta), %Sobra el -ed, obteniendo la base del verbo
+	atom_concat(BaseIncompleta, 'y', Base),
+	traduccion(Español, Base),
+	averiguarConjugacion(Español, 'pasado', Cantidad, Persona, Conjugacion).
+verbo(Cantidad, Persona, [Ingles|S], S, [Conjugacion]):- %Caso de ser pasado (version -ed)
+	sub_atom(Ingles, 0, _, 2, Base), %Sobra el -ed, obteniendo la base del verbo
+	traduccion(Español, Base),
+	averiguarConjugacion(Español, 'pasado', Cantidad, Persona, Conjugacion).
+verbo(Cantidad, Persona, [Ingles|S], S, [Conjugacion]):- %Caso de ser pasado (version -d)
+	sub_atom(Ingles, 0, _, 1, Base), %Sobra el -ed, obteniendo la base del verbo
+	atom_concat(Base, UltimaLetra, Ingles),
+	UltimaLetra = 'd',
+	traduccion(Español, Base),
+	averiguarConjugacion(Español, 'pasado', Cantidad, Persona, Conjugacion).
+	
+verbo(Cantidad, Persona, [Ingles|S], S, [Conjugacion]):- %Caso de ser presente con 's' (He, She, It)
+	sub_atom(Ingles, 0, _, 1, Base),
+	traduccion(Español, Base),
+	averiguarConjugacion(Español, 'presente', Cantidad, Persona, Conjugacion).
+verbo(Cantidad, Persona, [Ingles|S], S, [Conjugacion]):- %Caso de ser presente sin 's' (Todos excepto He, She, It)
+	traduccion(Español, Ingles),
+	averiguarConjugacion(Español, 'presente', Cantidad, Persona, Conjugacion).
 
 %%Prueba si el verbo a conjugar está en la lista de verbos irregulares.
 averiguarConjugacion(Infinitivo, Tiempo, Cantidad, Persona, Conjugacion):-
@@ -27,66 +102,41 @@ verboRegular_conjugador(InfinitivoRegular, Tiempo, Cantidad, Persona, Conjugado)
 	atom_concat(Raiz, Terminacion, InfinitivoRegular),
 	verboRegular(Terminacion, Tiempo, Cantidad, Persona, Conjugacion),
 	atom_concat(Raiz, Conjugacion, Conjugado).
-	
-traducir(S0, S, Resultado):- 
-	noPredicado(S0,S1, Resultado1), 
-	predicado(S1,S, Resultado2),
-	append(Resultado1, Resultado2, Resultado),
-	!.
-
-noPredicado(S0, S, [Resultado1,Resultado2]):- 
-	sintagma_nominal(Cantidad, Persona, S0, S1, Resultado1),
-	verbo(Cantidad, Persona, S1, S, Resultado2).
-	
-predicado([], [], []).
-predicado([Ingles|_], [], Español):- 
-	traduccion(Español, Ingles).
-predicado(S0, S, Resultado):- 
-	sintagma_nominal(S0, S, Resultado).
-
-sintagma_nominal(Cantidad, Persona, [Ingles|S], S, Español):-
-	traduccion(Español, Ingles),
-	pronombre(Cantidad, Persona, Español).
-sintagma_nominal(Cantidad, Persona, [Ingles|S], S, [Articulo|Español]):-
-	traduccion(Español, Ingles),
-	articulo(Genero, Cantidad, Articulo),
-	nombre(Genero, Cantidad, Español),
-	Persona = 'tercera'.
-sintagma_nominal([_|S1], S, [Articulo|Español]):- %Sintagma para el predicado
-	S1 = [Ingles|S],
-	traduccion(Español, Ingles),
-	articulo(Genero, Cantidad, Articulo),
-	nombre(Genero, Cantidad, Español).
-
-nombre(Genero, Cantidad, [X|S],S). %Obtener cantidad, genero por defecto
-
-verbo(Cantidad, Persona, [Will|S0], S, Conjugacion):- %Caso de ser futuro
-	Will = 'will',
-	S0 = [Ingles|S],
-	traduccion(Español, Ingles),
-	averiguarConjugacion(Español, 'futuro', Cantidad, Persona, Conjugacion).
-verbo(Cantidad, Persona, [Ingles|S], S, Conjugacion):- %Caso de ser pasado (no contempla los terminados en -ied)
-	sub_atom(Ingles, 0, _, 2, Base),
-	traduccion(Español, Base),
-	averiguarConjugacion(Español, 'pasado', Cantidad, Persona, Conjugacion).
-verbo(Cantidad, Persona, [Ingles|S], S, Conjugacion):- %Caso de ser presente sin 's' (He, She, It)
-	sub_atom(Ingles, 0, _, 1, Base),
-	traduccion(Español, Base),
-	averiguarConjugacion(Español, 'presente', Cantidad, Persona, Conjugacion).
-verbo(Cantidad, Persona, [Ingles|S], S, Conjugacion):- %Caso de ser presente sin 's' (Todos excepto He, She, It)
-	traduccion(Español, Ingles),
-	averiguarConjugacion(Español, 'presente', Cantidad, Persona, Conjugacion).
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%Sección de Bases de Datos
 
+%Pronombres
 traduccion('yo','i').
+traduccion('usted','you').
+traduccion('él','he').
+traduccion('ella','she').
+traduccion('nosotros','us').
+traduccion('ellos','they').
+
+%Verbos
 traduccion('intentar', 'try').
 traduccion('morir', 'die').
-traduccion('lentamente','slowly').
+traduccion('correr', 'run').
 
+%Adjetivos
+traduccion('lentamente','slowly').
+traduccion('rápido', 'fast').
+
+%Nombres
+traduccion('carro', 'car').
+traduccion('tijera', 'scissor'). %Mal escrito pero es caso especial
+traduccion('autódromo','racetrack').
+
+nombre('masculino', 'carro').
+nombre('femenino', 'tijera').
+nombre('masculino', 'autódromo').
+
+verboIrregular('morir', 'pasado', 'singular', 'segunda', 'murió').
+verboIrregular('morir', 'pasado', 'singular', 'tercera', 'murió').
 verboIrregular('morir', 'presente', 'singular', 'primera', 'muero').
+verboIrregular('morir', 'presente', 'singular', 'segunda', 'muere').
+verboIrregular('morir', 'presente', 'singular', 'tercera', 'muere').
 
 articulo('masculino', 'singular', 'el').
 articulo('masculino', 'plural', 'los').
@@ -96,7 +146,7 @@ articulo('femenino', 'plural', 'las').
 pronombre('singular', 'primera', 'yo').
 pronombre('singular', 'segunda', 'usted').
 pronombre('singular', 'tercera', 'él').
-pronombre('plural', 'segunda', 'ustedes').
+pronombre('plural', 'segunda', 'ustedes'). %No se utiliza pues 'you' es para plural/singular
 pronombre('plural', 'primera', 'nosotros').
 pronombre('plural', 'tercera', 'ellos').
 %pronombre('masculino', 'singular', 'tercera', 'él').
