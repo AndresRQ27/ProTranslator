@@ -10,9 +10,14 @@ verboRegular_desconjugador(InfinitivoRegular, Tiempo, Cantidad, Persona, Conjuga
 	%TODO: agregar verificacion con la base de datos implementada para obtener el infinitivo correcto.
 
 %%%%%%%%%%%%%%%%%%%%%%Sección para traducir de inglés a español.
+
+%TODO: Preguntas y ¿adverbios?
+
+%%Prueba si el verbo a conjugar está en la lista de verbos irregulares.
 averiguarConjugacion(Infinitivo, Tiempo, Cantidad, Persona, Conjugacion):-
 	verboIrregular(Infinitivo, Tiempo, Cantidad, Persona, Conjugacion).
-	
+
+%%Conjuga el verbo como si fuera un verbo regular.	
 averiguarConjugacion(Infinitivo, Tiempo, Cantidad, Persona, Conjugacion):-
 	verboRegular_conjugador(Infinitivo, Tiempo, Cantidad, Persona, Conjugacion).
 	
@@ -72,6 +77,10 @@ verbo(Cantidad, Persona, [Ingles|S], S, Conjugacion):- %Caso de ser presente sin
 	traduccion(Español, Ingles),
 	averiguarConjugacion(Español, 'presente', Cantidad, Persona, Conjugacion).
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%Sección de Bases de Datos
+
 traduccion('yo','i').
 traduccion('intentar', 'try').
 traduccion('morir', 'die').
@@ -79,13 +88,10 @@ traduccion('lentamente','slowly').
 
 verboIrregular('morir', 'presente', 'singular', 'primera', 'muero').
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%Sección de Bases de Datos
-
-articulo('masculino', 'singular', [el|S], S).
-articulo('masculino', 'plural', [los|S], S).
-articulo('femenino', 'singular', [la|S], S).
-articulo('femenino', 'plural', [las|S], S).
+articulo('masculino', 'singular', 'el').
+articulo('masculino', 'plural', 'los').
+articulo('femenino', 'singular', 'la').
+articulo('femenino', 'plural', 'las').
 
 pronombre('singular', 'primera', 'yo').
 pronombre('singular', 'segunda', 'usted').
