@@ -132,12 +132,6 @@ nombre('masculino', 'carro').
 nombre('femenino', 'tijera').
 nombre('masculino', 'autódromo').
 
-verboIrregular('morir', 'pasado', 'singular', 'segunda', 'murió').
-verboIrregular('morir', 'pasado', 'singular', 'tercera', 'murió').
-verboIrregular('morir', 'presente', 'singular', 'primera', 'muero').
-verboIrregular('morir', 'presente', 'singular', 'segunda', 'muere').
-verboIrregular('morir', 'presente', 'singular', 'tercera', 'muere').
-
 articulo('masculino', 'singular', 'el').
 articulo('masculino', 'plural', 'los').
 articulo('femenino', 'singular', 'la').
@@ -158,7 +152,14 @@ pronombre('plural', 'tercera', 'ellos').
 %que diferenciar entre masculino y femenino, comentar él/ellos 
 %en caso de usar los anteriores
 
-%%%Terminados en -ar
+%%%Verbos
+verboIrregular('morir', 'pasado', 'singular', 'segunda', 'murió').
+verboIrregular('morir', 'pasado', 'singular', 'tercera', 'murió').
+verboIrregular('morir', 'presente', 'singular', 'primera', 'muero').
+verboIrregular('morir', 'presente', 'singular', 'segunda', 'muere').
+verboIrregular('morir', 'presente', 'singular', 'tercera', 'muere').
+
+%%Terminados en -ar
 verboRegular('ar', 'pasado', 'singular', 'primera', 'é').
 verboRegular('ar', 'pasado', 'singular', 'segunda', 'ó').
 verboRegular('ar', 'pasado', 'singular', 'tercera', 'ó').
@@ -181,7 +182,7 @@ verboRegular('ar', 'futuro', 'plural', 'segunda', 'arán').
 verboRegular('ar', 'futuro', 'plural', 'tercera', 'arán').
 
 
-%%%Terminados en -er
+%%Terminados en -er
 verboRegular('er', 'pasado', 'singular', 'primera', 'í').
 verboRegular('er', 'pasado', 'singular', 'segunda', 'ió').
 verboRegular('er', 'pasado', 'singular', 'tercera', 'ió').
@@ -204,7 +205,7 @@ verboRegular('er', 'futuro', 'plural', 'segunda', 'erán').
 verboRegular('er', 'futuro', 'plural', 'tercera', 'erán').
 
 
-%%%Terminados en -ir
+%%Terminados en -ir
 verboRegular('ir', 'pasado', 'singular', 'primera', 'í').
 verboRegular('ir', 'pasado', 'singular', 'segunda', 'ió').
 verboRegular('ir', 'pasado', 'singular', 'tercera', 'ió').
