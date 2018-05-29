@@ -161,7 +161,9 @@ verboRegular_conjugador(InfinitivoRegular, Tiempo, Cantidad, Persona, Conjugado)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%Sección de Bases de Datos
 
-%Pronombres
+%Todo siempre empieza con traduccion().
+
+%Pronombres			Forma de los pronombres: traduccion('español', 'ingles'). 
 traduccion('yo','i').
 traduccion('usted','you').
 traduccion('él','he').
@@ -169,20 +171,25 @@ traduccion('ella','she').
 traduccion('nosotros','us').
 traduccion('ellos','they').
 
-%Verbos
+%Verbos				Forma de los verbos: traducción('español', 'ingles'). ****Sólo infinitivos
 traduccion('intentar', 'try').
 traduccion('morir', 'die').
 traduccion('correr', 'run').
 
-%Adjetivos
+%Los siguientes verbos sólo pueden ser agregados a la lista si la traducción es únicamente de ingles a español ****Esto es para verbos que en ingles sean irregulares
+traduccion('tener', 'has').
+traduccion('tener', 'have').
+
+%Adjetivos			Forma de los adejetivos: traduccion('español', 'ingles'=.
 traduccion('lentamente','slowly').
 traduccion('rápido', 'fast').
 
-%Nombres
+%Nombres			Forma de los nombres: traduccion('español', 'ingles'). ****Únicamente el singular
 traduccion('carro', 'car').
 traduccion('tijera', 'scissor'). %Mal escrito pero es caso especial
 traduccion('autódromo','racetrack').
 
+%Clasificación de nombres	Forma de la clasificación de los nombres: nombre('genero', 'palabra').
 nombre('masculino', 'carro').
 nombre('femenino', 'tijera').
 nombre('masculino', 'autódromo').
@@ -207,7 +214,7 @@ pronombre('plural', 'tercera', 'ellos').
 %que diferenciar entre masculino y femenino, comentar él/ellos 
 %en caso de usar los anteriores
 
-%%%Verbos
+%%%Verbos		Forma de los verbos irregulares: verboIrregular('infinitivo', 'tiempo', 'cantidad', 'persona', conjugación). ****Esto se tiene que hacer para cada conjugación irrgular que tenga el verbo. Si alguna conjugación coincide con un verbo regular (ej: morí es primera persona, pasado, singular y es igual a la terminación de los -ir).
 verboIrregular('morir', 'pasado', 'singular', 'segunda', 'murió').
 verboIrregular('morir', 'pasado', 'singular', 'tercera', 'murió').
 verboIrregular('morir', 'presente', 'singular', 'primera', 'muero').
