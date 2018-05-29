@@ -9,7 +9,14 @@ interfaz():-
 	writeln('2: Traducir de Español a Inglés.'),
 	read(Eleccion),
 	eleccion(Eleccion).
-	
+
+eleccion(Eleccion):-
+	Eleccion = 1,
+	writeln('Escriba la frase a traducir: '),
+	read(Texto),
+	ingles_español([Texto], Respuesta),
+	write_term(Respuesta, [fullstop(true)]),
+	!.
 eleccion(Eleccion):-
 	Eleccion = 1,
 	writeln('Escriba la frase a traducir: '),
@@ -19,15 +26,23 @@ eleccion(Eleccion):-
 	atomic_list_concat(Traduccion, ' ', Respuesta),
 	write_term(Respuesta, [fullstop(true)]),
 	!.
-	
+
+eleccion(Eleccion):-
+	Eleccion = 2,
+	writeln('Escriba la frase a traducir: '),
+	read(Texto),
+	español_ingles([Texto], Respuesta),
+	write_term(Respuesta, [fullstop(true)]),
+	!.	
 eleccion(Eleccion):-
 	Eleccion = 2,
 	writeln('Escriba la frase a traducir: '),
 	read(Texto),
 	atomic_list_concat(Lista, ' ', Texto),
-	español_ingles(Lista, Traduccion),
-	atomic_list_concat(Traduccion, ' ', Respuesta),
-	write_term(Respuesta, [fullstop(true)]),
+	%español_ingles(Lista, Traduccion),
+	%atomic_list_concat(Traduccion, ' ', Respuesta),
+	%write_term(Respuesta, [fullstop(true)]),
+	writeln('No está implementado'),
 	!.
 	
 eleccion(_):-
@@ -35,6 +50,12 @@ eleccion(_):-
 	!.
 
 %%Obtiene el verbo en infinitivo de la conjugación. Útil para conversión Español->Inglés
+
+español_ingles([Lista|Sobrante], Resultado):-
+	Sobrante = [],
+	traduccion(Lista, Resultado),
+	!.
+	
 verboRegular_desconjugador(InfinitivoRegular, Tiempo, Cantidad, Persona, Conjugado):-
 	atom_concat(Raiz, Conjugacion, Conjugado),
 	verboRegular(Terminacion, Tiempo, Cantidad, Persona, Conjugacion),
@@ -132,6 +153,12 @@ verbo(Cantidad, Persona, [Ingles|Sobrante], Sobrante, [Conjugacion]):- %Caso de 
 	UltimaLetra = 'd', %Para diferenciar entre S de presente y D de pasado
 	traduccion(Español, Base),
 	averiguarConjugacion(Español, 'pasado', Cantidad, Persona, Conjugacion).
+verbo(Cantidad, Persona, [Ingles|Sobrante], Sobrante, [Conjugacion]):- %Caso de ser pasado (version was)
+	Ingles = 'was',
+	averiguarConjugacion('estar', 'pasado', Cantidad, Persona, Conjugacion).
+verbo(Cantidad, Persona, [Ingles|Sobrante], Sobrante, [Conjugacion]):- %Caso de ser pasado (version were)
+	Ingles = 'were',
+	averiguarConjugacion('estar', 'pasado', Cantidad, Persona, Conjugacion).
 	
 verbo(_, _, [Ingles|Sobrante], Sobrante, [Conjugacion]):- %Caso de ser presente con 's' (He, She, It)
 	sub_atom(Ingles, 0, _, 1, Base),
@@ -140,6 +167,15 @@ verbo(_, _, [Ingles|Sobrante], Sobrante, [Conjugacion]):- %Caso de ser presente 
 verbo(Cantidad, Persona, [Ingles|Sobrante], Sobrante, [Conjugacion]):- %Caso de ser presente sin 's' (Todos excepto He, She, It)
 	traduccion(Español, Ingles),
 	averiguarConjugacion(Español, 'presente', Cantidad, Persona, Conjugacion).
+verbo(_, _, [Ingles|Sobrante], Sobrante, [Conjugacion]):- %Caso de ser presente is
+	Ingles = 'am',
+	Conjugacion = 'estoy'.
+verbo(Cantidad, Persona, [Ingles|Sobrante], Sobrante, [Conjugacion]):- %Caso de ser presente is
+	Ingles = 'is',
+	averiguarConjugacion('estar', 'presente', Cantidad, Persona, Conjugacion).
+verbo(Cantidad, Persona, [Ingles|Sobrante], Sobrante, [Conjugacion]):- %Caso de ser presente are
+	Ingles = 'are',
+	averiguarConjugacion('estar', 'presente', Cantidad, Persona, Conjugacion).
 	
 verbo(_, _, [Ingles|Sobrante], Sobrante, [Ingles]). %Caso en el que el verbo no tenga traducción
 
@@ -175,14 +211,16 @@ traduccion('ellos','they').
 traduccion('intentar', 'try').
 traduccion('morir', 'die').
 traduccion('correr', 'run').
+traduccion('estar', 'be').
 
 %Los siguientes verbos sólo pueden ser agregados a la lista si la traducción es únicamente de ingles a español ****Esto es para verbos que en ingles sean irregulares
-traduccion('tener', 'has').
 traduccion('tener', 'have').
+traduccion('tener', 'has').
 
-%Adjetivos			Forma de los adejetivos: traduccion('español', 'ingles'=.
+%Adjetivos			Forma de los adejetivos: traduccion('español', 'ingles').
 traduccion('lentamente','slowly').
 traduccion('rápido', 'fast').
+traduccion('deprimido', 'depressed'). 
 
 %Nombres			Forma de los nombres: traduccion('español', 'ingles'). ****Únicamente el singular
 traduccion('carro', 'car').
@@ -220,6 +258,15 @@ verboIrregular('morir', 'pasado', 'singular', 'tercera', 'murió').
 verboIrregular('morir', 'presente', 'singular', 'primera', 'muero').
 verboIrregular('morir', 'presente', 'singular', 'segunda', 'muere').
 verboIrregular('morir', 'presente', 'singular', 'tercera', 'muere').
+
+verboIrregular('estar', 'pasado', 'singular', 'primera', 'estuve').
+verboIrregular('estar', 'pasado', 'singular', 'segunda', 'estuvo').
+verboIrregular('estar', 'pasado', 'singular', 'tercera', 'estuvo').
+verboIrregular('estar', 'pasado', 'plural', 'primera', 'estuvimos').
+verboIrregular('estar', 'pasado', 'plural', 'segunda', 'estuvieron').
+verboIrregular('estar', 'pasado', 'plural', 'tercera', 'estuvieron').
+verboIrregular('estar', 'presente', 'singular', 'segunda', 'está').
+verboIrregular('estar', 'presente', 'singular', 'tercera', 'está').
 
 %%Terminados en -ar
 verboRegular('ar', 'pasado', 'singular', 'primera', 'é').
@@ -288,4 +335,24 @@ verboRegular('ir', 'futuro', 'singular', 'tercera', 'irá').
 verboRegular('ir', 'futuro', 'plural', 'primera', 'iremos').
 verboRegular('ir', 'futuro', 'plural', 'segunda', 'irán').
 verboRegular('ir', 'futuro', 'plural', 'tercera', 'irán').
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+translate('Prolog es uno de los primeros lenguajes de programación lógica y sigue siendo popular hoy en día. Es un lenguaje de programación comúnmente asociado con la lingüística computacional y la inteligencia artificial y se utiliza en sistemas expertos, demostración de teoremas y comparación de patrones sobre árboles de análisis de lenguaje natural y procesamiento del lenguaje natural.', 'Prolog is one of the first logic programming languages and it remains popular today. It is a programming language commonly associated with computational linguistics and artificial intelligence and is used in expert systems, theorem proving and pattern matching over natural language parse trees and natural language processing').
 
