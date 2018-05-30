@@ -1314,11 +1314,9 @@ traduccion('bajo','low').
 traduccion('blanco','white').
 traduccion('blando','soft').
 traduccion('bonito','pretty').
-traduccion('buen','good').
 traduccion('bueno','good').
 traduccion('caliente','hot').
 traduccion('capaz','capable').
-traduccion('capaz','able').
 traduccion('central','central').
 traduccion('común','common').
 traduccion('conocido','known').
@@ -1381,7 +1379,6 @@ traduccion('poco','little').
 traduccion('poco','few').
 traduccion('popular','popular').
 traduccion('posible','possible').
-traduccion('primer','first').
 traduccion('primero','first').
 traduccion('principal','principal').
 traduccion('próximo','next').
@@ -1526,7 +1523,6 @@ traduccion('copia','copy').
 traduccion('maíz','corn').
 traduccion('algodón','cotton').
 traduccion('país','country').
-traduccion('curso','course').
 traduccion('vaca','cow').
 traduccion('multitud','crowd').
 traduccion('día','day').
@@ -1543,7 +1539,7 @@ traduccion('energía','energy').
 traduccion('ejemplo','example').
 traduccion('experiencia','experience').
 traduccion('ojo','eye').
-traduccion('juego, partido','game').
+traduccion('juego','game').
 traduccion('jardín','garden').
 traduccion('carburante','gas').
 traduccion('chica','girl').
@@ -1559,14 +1555,13 @@ traduccion('mano','hand').
 traduccion('sombrero','hat').
 traduccion('cabeza','head').
 traduccion('corazón','heart').
-traduccion('calor, calefacción','heat').
+traduccion('calor','heat').
 traduccion('historia','history').
-traduccion('agujero, hueco','hole').
-traduccion('casa','home').
+traduccion('agujero','hole').
+traduccion('casa','house').
 traduccion('hogar','home').
 traduccion('caballo','horse').
 traduccion('hora','hour').
-traduccion('casa','house').
 traduccion('hielo','ice').
 traduccion('idea','idea').
 traduccion('pulgada','inch').
@@ -1575,9 +1570,8 @@ traduccion('información','information').
 traduccion('insecto','insect').
 traduccion('interés','interest').
 traduccion('hierro','iron').
-traduccion('plancha','iron').
 traduccion('isla','island').
-traduccion('puesto de trabajo','job').
+traduccion('trabajo','job').
 traduccion('llave','key').
 traduccion('lago','lake').
 traduccion('tierra','land').
@@ -1622,7 +1616,6 @@ traduccion('párrafo','paragraph').
 traduccion('parque','park').
 traduccion('parte','part').
 traduccion('fiesta','party').
-traduccion('partido','game').
 traduccion('pasado','past').
 traduccion('persona','person').
 traduccion('gente','people').
@@ -1689,6 +1682,214 @@ traduccion('mundo','world').
 nombre('masculino', 'carro').
 nombre('femenino', 'tijera').
 nombre('masculino', 'autódromo').
+nombre('femenino', 'acción').
+nombre('femenino', 'edad').
+nombre('masculino', 'aire').
+nombre('masculino', 'animal').
+nombre('femenino', 'respuesta').
+nombre('femenino', 'manzana').
+nombre('masculino', 'arte').
+nombre('masculino', 'bebé').
+nombre('femenino', 'espalda').
+nombre('femenino', 'bola').
+nombre('femenino', 'pelota').
+nombre('masculino', 'banco').
+nombre('femenino', 'cama').
+nombre('femenino', 'factura').
+nombre('masculino', 'pájaro').
+nombre('femenino', 'sangre').
+nombre('masculino', 'barco').
+nombre('masculino', 'cuerpo').
+nombre('masculino', 'hueso').
+nombre('masculino', 'libro').
+nombre('masculino', 'fondo').
+nombre('masculino', 'caja').
+nombre('masculino', 'niño').
+nombre('masculino', 'hermano').
+nombre('masculino', 'edificio').
+nombre('masculino', 'negocio').
+nombre('femenino', 'llamada').
+nombre('femenino', 'capital').
+nombre('masculino', 'caso').
+nombre('masculino', 'estuche').
+nombre('masculino', 'gato').
+nombre('femenino', 'causa').
+nombre('masculino', 'céntimo').
+nombre('masculino', 'centro').
+nombre('masculino', 'siglo').
+nombre('femenino', 'oportunidad').
+nombre('masculino', 'cambio').
+nombre('masculino', 'cheque').
+nombre('masculino', 'niño').
+nombre('femenino', 'iglesia').
+nombre('masculino', 'círculo').
+nombre('femenino', 'ciudad').
+nombre('femenino', 'clase').
+nombre('masculino', 'curso').
+nombre('femenino', 'ropa').
+nombre('femenino', 'nube').
+nombre('femenino', 'costa').
+nombre('masculino', 'color').
+nombre('femenino', 'empresa').
+nombre('femenino', 'consonante').
+nombre('femenino', 'copia').
+nombre('masculino', 'maíz').
+nombre('masculino', 'algodón').
+nombre('masculino', 'país').
+nombre('femenino', 'vaca').
+nombre('femenino', 'multitud').
+nombre('masculino', 'día').
+nombre('masculino', 'diccionario').
+nombre('femenino', 'dirección').
+nombre('femenino', 'distancia').
+nombre('masculino', 'médico').
+nombre('masculino', 'dólar').
+nombre('femenino', 'puerta').
+nombre('femenino', 'oreja').
+nombre('femenino', 'tierra').
+nombre('masculino', 'huevo').
+nombre('femenino', 'energía').
+nombre('masculino', 'ejemplo').
+nombre('femenino', 'experiencia').
+nombre('masculino', 'ojo').
+nombre('masculino', 'juego').
+nombre('masculino', 'jardín').
+nombre('masculino', 'carburante').
+nombre('femenino', 'chica').
+nombre('masculino', 'vidrio').
+nombre('masculino', 'vaso').
+nombre('masculino', 'oro').
+nombre('masculino', 'gobierno').
+nombre('femenino', 'hierba').
+nombre('masculino', 'césped').
+nombre('masculino', 'grupo').
+nombre('masculino', 'pelo').
+nombre('masculino', 'mano').
+nombre('masculino', 'sombrero').
+nombre('femenino', 'cabeza').
+nombre('masculino', 'corazón').
+nombre('masculino', 'calor').
+nombre('femenino', 'historia').
+nombre('masculino', 'agujero').
+nombre('femenino', 'casa').
+nombre('masculino', 'hogar').
+nombre('masculino', 'caballo').
+nombre('femenino', 'hora').
+nombre('masculino', 'hielo').
+nombre('femenino', 'idea').
+nombre('femenino', 'pulgada').
+nombre('femenino', 'industria').
+nombre('femenino', 'información').
+nombre('masculino', 'insecto').
+nombre('masculino', 'interés').
+nombre('masculino', 'hierro').
+nombre('femenino', 'plancha').
+nombre('femenino', 'isla').
+nombre('masculino', 'trabajo').
+nombre('femenino', 'llave').
+nombre('masculino', 'lago').
+nombre('femenino', 'tierra').
+nombre('masculino', 'idioma').
+nombre('femenino', 'ley').
+nombre('femenino', 'pierna').
+nombre('masculino', 'nivel').
+nombre('femenino', 'mentira').
+nombre('femenino', 'vida').
+nombre('femenino', 'luz').
+nombre('femenino', 'línea').
+nombre('femenino', 'lista').
+nombre('femenino', 'máquina').
+nombre('masculino', 'hombre').
+nombre('masculino', 'mapa').
+nombre('masculino', 'material').
+nombre('femenino', 'carne').
+nombre('masculino', 'medio').
+nombre('femenino', 'milla').
+nombre('femenino', 'leche').
+nombre('femenino', 'mente').
+nombre('masculino', 'minuto').
+nombre('masculino', 'dinero').
+nombre('masculino', 'mes').
+nombre('femenino', 'luna').
+nombre('femenino', 'boca').
+nombre('femenino', 'música').
+nombre('femenino', 'nación').
+nombre('femenino', 'noche').
+nombre('femenino', 'nariz').
+nombre('femenino', 'nota').
+nombre('masculino', 'número').
+nombre('masculino', 'objeto').
+nombre('masculino', 'océano').
+nombre('femenino', 'oficina').
+nombre('masculino', 'aceite').
+nombre('masculino', 'petróleo').
+nombre('femenino', 'página').
+nombre('masculino', 'par').
+nombre('masculino', 'papel').
+nombre('masculino', 'párrafo').
+nombre('masculino', 'parque').
+nombre('femenino', 'parte').
+nombre('femenino', 'fiesta').
+nombre('masculino', 'pasado').
+nombre('femenino', 'persona').
+nombre('femenino', 'gente').
+nombre('femenino', 'libra').
+nombre('masculino', 'presidente').
+nombre('masculino', 'problema').
+nombre('masculino', 'producto').
+nombre('femenino', 'propiedad').
+nombre('femenino', 'pregunta').
+nombre('femenino', 'carrera').
+nombre('masculino', 'radio').
+nombre('femenino', 'lluvia').
+nombre('femenino', 'razón').
+nombre('masculino', 'récord').
+nombre('femenino', 'región').
+nombre('masculino', 'anillo').
+nombre('masculino', 'río').
+nombre('masculino', 'camino').
+nombre('femenino', 'roca').
+nombre('femenino', 'fila').
+nombre('femenino', 'regla').
+nombre('femenino', 'arena').
+nombre('femenino', 'escuela').
+nombre('femenino', 'ciencia').
+nombre('masculino', 'mar').
+nombre('masculino', 'asiento').
+nombre('masculino', 'segundo').
+nombre('femenino', 'frase').
+nombre('femenino', 'serie').
+nombre('masculino', 'lado').
+nombre('femenino', 'señal').
+nombre('masculino', 'signo').
+nombre('femenino', 'hermana').
+nombre('femenino', 'talla').
+nombre('masculino', 'tamaño').
+nombre('femenino', 'piel').
+nombre('femenino', 'nieve').
+nombre('masculino', 'soldado').
+nombre('femenino', 'solución').
+nombre('masculino', 'hijo').
+nombre('femenino', 'primavera').
+nombre('masculino', 'cuadrado').
+nombre('femenino', 'estrella').
+nombre('masculino', 'estado').
+nombre('femenino', 'parada').
+nombre('femenino', 'calle').
+nombre('masculino', 'estudiante').
+nombre('masculino', 'azúcar').
+nombre('masculino', 'sol').
+nombre('masculino', 'pueblo').
+nombre('masculino', 'vocal').
+nombre('femenino', 'guerra').
+nombre('masculino', 'tiempo').
+nombre('masculino', 'peso').
+nombre('femenino', 'esposa').
+nombre('femenino', 'ventana').
+nombre('masculino', 'invierno').
+nombre('femenino', 'mujer').
+nombre('femenino', 'palabra').
+nombre('masculino', 'mundo').
 
 articulo('masculino', 'singular', 'el').
 articulo('masculino', 'plural', 'los').
