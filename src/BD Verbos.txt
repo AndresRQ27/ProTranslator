@@ -1,1042 +1,1042 @@
-traduccion('Abandonar','Leave').
-traduccion('Depender','depend').
-traduccion('Maquillar','Make up').
-traduccion('Abarcar','Encompass').
-traduccion('Deplorar','Deplore').
-traduccion('Maquillarse','Make up').
-traduccion('Abatir','Bring down').
-traduccion('Depositar','deposit').
-traduccion('Maravillar','Wonder').
-traduccion('Abonar','Pay').
-traduccion('Deprimir','Depress').
-traduccion('Marcar','Mark').
-traduccion('Abordar','Approach').
-traduccion('Derribar','Shoot down').
-traduccion('Marchar','March').
-traduccion('Abortar','Abort').
-traduccion('Desaconsejar','Advise against').
-traduccion('Marcharse','Leave').
-traduccion('Abrazar','Hug').
-traduccion('Desafinar','Challenge').
-traduccion('Marear','Marea').
-traduccion('Abrigar','Shelter').
-traduccion('Desarrollar','Develop').
-traduccion('Matar','Kill').
-traduccion('Abrigarse','Wrap').
-traduccion('Desarrollarse','Develop').
-traduccion('Matricular','Enroll').
-traduccion('Abrochar','Fasten').
-traduccion('Desatar','Tie off').
-traduccion('Matricularse','Enroll').
-traduccion('Absorber','Absorb').
-traduccion('Desayunar','Have breakfast').
-traduccion('Maullar','Meow').
-traduccion('Aburrir','Bore').
-traduccion('Descansar','Rest').
-traduccion('Meditar','meditate').
-traduccion('Aburrirse','Get bored').
-traduccion('Descargar','download').
-traduccion('Mejorar','get better').
-traduccion('Abusar','abuse').
-traduccion('Descarrilar','Derail').
-traduccion('Memorizar','Memorize').
-traduccion('Acabar','Finish').
-traduccion('Desconectar','Disconnect').
-traduccion('Mencionar','mention').
-traduccion('Acampar','camp').
-traduccion('Desconfiar','Distrust').
-traduccion('Mendigar','Beg').
-traduccion('Acariciar','caress').
-traduccion('Descongelar','Defrost').
-traduccion('Menguar','Wane').
-traduccion('Acceder','access').
-traduccion('Descubrir','Discover').
-traduccion('Meter','put').
-traduccion('Acelerar','Speed ​​up').
-traduccion('Desear',' wish').
-traduccion('Mezclar','Mix').
-traduccion('Acentuar','Accentuate').
-traduccion('Desnudar','Strip').
-traduccion('Migrar','Migrate').
-traduccion('Aceptar',' accept').
-traduccion('Despegar','Take off').
-traduccion('Mirar','Look').
-traduccion('Acercar','Zoom in').
-traduccion('Desplazar','Displace').
-traduccion('Mistificar','Mystify').
-traduccion('Acercarse','Getting closer').
-traduccion('Destacar','Highlight').
-traduccion('Modernizar','Modernize').
-traduccion('Aclarar','Clear out').
-traduccion('Destinar','Target').
-traduccion('Modificar','Modify').
-traduccion('Aclararse','Clear up').
-traduccion('Destruir','Destroy').
-traduccion('Modular','Modular').
-traduccion('Acoger','Welcome').
-traduccion('Desviar','Divert').
-traduccion('Mojar','Wet').
-traduccion('Acomodar','Accommodate').
-traduccion('Detectar','Detect').
-traduccion('Molar','Molar').
-traduccion('Acompañar','Accompany').
-traduccion('Deteriorar','Deteriorate').
-traduccion('Molestar','Bother').
-traduccion('Aconsejar','Advise').
-traduccion('Determinar','Decide').
-traduccion('Montar','Mount').
-traduccion('Acoplar','Couple').
-traduccion('Detestar','Detest').
-traduccion('Motivar',' motivate').
-traduccion('Acortar','Shorten').
-traduccion('Devorar','Devour').
-traduccion('Movilizar','Mobilize').
-traduccion('Acosar',' bully').
-traduccion('Dibujar',' draw').
-traduccion('Mudar','Move').
-traduccion('Acostumbrar','Accusm').
-traduccion('Dictar','Dictate').
-traduccion('Mudarse','Move').
-traduccion('Acostumbrarse','Get used').
-traduccion('Diferenciar','Differentiate').
-traduccion('Multiplicar','Multiply').
-traduccion('Acrecentar','Increase').
-traduccion('Difundir','Spread').
-traduccion('Murmurar','Murmur').
-traduccion('Acreditar','Accredit').
-traduccion('Dimitir','Resign').
-traduccion('Mutilar','Maim').
-traduccion('Activar','Activate').
-traduccion('Dirigir','Lead').
-traduccion('Nadar','Swim').
-traduccion('Actualizar',' update').
-traduccion('Discriminar','Discriminate').
-traduccion('Narrar','Narrate').
-traduccion('Actuar','Act').
-traduccion('Disculpar','Excuse').
-traduccion('Naufragar','Sink').
-traduccion('Acudir','Go').
-traduccion('Disculparse','Apologize').
-traduccion('Navegar','Surf').
-traduccion('Acusar',' accuse').
-traduccion('Discutir','Argue').
-traduccion('Necesitar','Need').
-traduccion('Adaptar',' adapt').
-traduccion('Diseñar','Design').
-traduccion('Negociar','Negotiate').
-traduccion('Adecuar','Fit').
-traduccion('Disfrazar','Disguise').
-traduccion('Neutralizar','Neutralize').
-traduccion('Adelantar','Advance').
-traduccion('Disfrutar','Enjoy').
-traduccion('Neviscar','Neviscar').
-traduccion('Adelgazar','Slim down').
-traduccion('Disimular','Hide').
-traduccion('Nombrar',' name').
-traduccion('Adivinar','Guess').
-traduccion('Disminuir','Decrease').
-traduccion('Notar','Notice').
-traduccion('Adjuntar',' attach').
-traduccion('Disparar','Shoot').
-traduccion('Notificar','Notify').
-traduccion('Administrar','Manage').
-traduccion('Disputar','Dispute').
-traduccion('Nublar','Cloudy').
-traduccion('Admirar',' admire').
-traduccion('Distinguir','Distinguish').
-traduccion('Numerar','Number').
-traduccion('Admitir',' admit').
-traduccion('Distribuir',' distribute').
-traduccion('Nutrir','Nourish').
-traduccion('Adoptar','Adopt').
-traduccion('Divergir','Diverge').
-traduccion('Narrar','Narrate').
-traduccion('Adorar',' adore').
-traduccion('Dividir','Divide').
-traduccion('Nublar','Cloudy').
-traduccion('Adornar','Decorate').
-traduccion('Divisar','Divide').
-traduccion('Obligar','Obligate').
-traduccion('Afectar',' affect').
-traduccion('Divorciarse','Divorce').
-traduccion('Observar','Observe').
-traduccion('Afeitar',' shave').
-traduccion('Divulgar','Divulge').
-traduccion('Ocultar','Hide').
-traduccion('Afeitarse','Shave').
-traduccion('Doblar','Bend').
-traduccion('Ocupar','Occupy').
-traduccion('Afinar','Fine tune').
-traduccion('Dominar',' dominate').
-traduccion('Ocuparse','Take care').
-traduccion('Afirmar','Say').
-traduccion('Donar','Donate').
-traduccion('Ocurrir','Occur').
-traduccion('Afligir','Afflict').
-traduccion('Ducharse','Get a shower').
-traduccion('Odiar','Hate').
-traduccion('Aflojar','Loosen up').
-traduccion('Dudar','Doubt').
-traduccion('Ofender',' offend').
-traduccion('Afrontar','Front facing').
-traduccion('Duplicar','Double').
-traduccion('Olvidar','Forget').
-traduccion('Agarrar','Grab').
-traduccion('Durar',' last').
-traduccion('Omitir','Skip').
-traduccion('Agitar','Shake').
-traduccion('Echar','Throw').
-traduccion('Operar','Operate').
-traduccion('Agotar','Exhaust').
-traduccion('Echarse','Lie').
-traduccion('Opinar','Review').
-traduccion('Agradar','Please').
-traduccion('Edificar','Build').
-traduccion('Optar',' opt').
-traduccion('Agregar','Add').
-traduccion('Editar','Edit').
-traduccion('Ordenar','Order').
-traduccion('Aguantar','Endure').
-traduccion('Educar','Educate').
-traduccion('Ordenar','Order').
-traduccion('Aguardar','Wait').
-traduccion('Efectuar','Make').
-traduccion('Organizar','Organize').
-traduccion('Ahogar','Drown').
-traduccion('Ejecutar','Run').
-traduccion('Orinar',' pee').
-traduccion('Ahorcar','Hang').
-traduccion('Ejercer','Exercise').
-traduccion('Osar','Dare').
-traduccion('Ahorrar','Save money').
-traduccion('Ejercitar',' exercise').
-traduccion('Oscilar','Range').
-traduccion('Ajustar','Adjust').
-traduccion('Elaborar',' elaborate').
-traduccion('Oxidar','Oxidize').
-traduccion('Alargar',' enlarge').
-traduccion('Elevar','Raise').
-traduccion('Paralizar','Paralyze').
-traduccion('Alarmar','Alarm').
-traduccion('Eliminar','Remove').
-traduccion('Parar','Sp').
-traduccion('Alborotar','Disturb').
-traduccion('Emancipar','Emancipate').
-traduccion('Pararse','Sp').
-traduccion('Alcanzar','Reach').
-traduccion('Embarazar','Pregnant').
-traduccion('Parlar','Parlar').
-traduccion('Alegar','Plead').
-traduccion('Embarcar','Embark').
-traduccion('Parpadear',' blink').
-traduccion('Alegrar','Gladden').
-traduccion('Emborracharse','Get drunk').
-traduccion('Participar','Take part').
-traduccion('Alegrarse','Rejoice').
-traduccion('Embrollar','Muddle').
-traduccion('Partir','Depart').
-traduccion('Alejar','Ward off').
-traduccion('Embrujar','Bewitch').
-traduccion('Pasar','Happen').
-traduccion('Aligerar','Lighten up').
-traduccion('Emerger','Emerge').
-traduccion('Pasear','Take a walk').
-traduccion('Alimentar','Feed').
-traduccion('Emigrar','Emigrate').
-traduccion('Pasmar','Asnish').
-traduccion('Aliñar','Dress').
-traduccion('Emitir',' emit').
-traduccion('Patear','Kick').
-traduccion('Aliviar','Relieve').
-traduccion('Empeñar','Pawn').
-traduccion('Patinar','Rollerblading').
-traduccion('Almacenar',' sck').
-traduccion('Empeñarse','Engage').
-traduccion('Pedalear','Pedal').
-traduccion('Alojar','Accommodate').
-traduccion('Empezar','Start').
-traduccion('Pegar','Paste').
-traduccion('Alojarse',' stay').
-traduccion('Emplear','Use').
-traduccion('Peinar','Comb').
-traduccion('Alquilar','Rent').
-traduccion('Emprender','Undertake').
-traduccion('Peinarse','Combing').
-traduccion('Alterar','Alter').
-traduccion('Empujar','Push').
-traduccion('Pelar','Peel').
-traduccion('Alumbrar','Light').
-traduccion('Enamorarse','Fell in love').
-traduccion('Pelear','Fight').
-traduccion('Alzar','Raise').
-traduccion('Encajar',' fit in').
-traduccion('Pender','Hang').
-traduccion('Amar',' love').
-traduccion('Encantar','Love').
-traduccion('Penetrar','Penetrate').
-traduccion('Amenazar',' threat').
-traduccion('Encargar',' place an order').
-traduccion('Percibir','Perceive').
-traduccion('Amenizar','Enlighten').
-traduccion('Enchufar','Plug').
-traduccion('Perder',' lose').
-traduccion('Ampliar','Enlarge').
-traduccion('Encoger','Shrink').
-traduccion('Perdonar','Forgive').
-traduccion('Amplificar','Amplify').
-traduccion('Encuestar',' survey').
-traduccion('Perfeccionar',' perfect').
-traduccion('Analizar','Analyze').
-traduccion('Enfadar','Anger').
-traduccion('Perfumar','Perfume').
-traduccion('Anhelar','Long').
-traduccion('Enfadarse','Get angry').
-traduccion('Perjudicar','Harm').
-traduccion('Animar','Encourage').
-traduccion('Enfermar','Sick').
-traduccion('Permitir','Allow').
-traduccion('Anotar','Annotate').
-traduccion('Enfocar','Focus').
-traduccion('Persistir',' persist').
-traduccion('Anticipar','Anticipate').
-traduccion('Enfriar','Cool').
-traduccion('Persuadir','Persuade').
-traduccion('Anular','Cancel').
-traduccion('Enganchar',' hook').
-traduccion('Pesar',' weigh').
-traduccion('Anunciar','Announce').
-traduccion('Engañar','Cheat').
-traduccion('Pescar','Fishing').
-traduccion('Añadir','Add').
-traduccion('Engañarse','Deceive').
-traduccion('Piar','Tweet').
-traduccion('Añorar','Yearn').
-traduccion('Engordar','Fatten').
-traduccion('Picar','Chop').
-traduccion('Apagar',' turn off').
-traduccion('Engrasar','Grease').
-traduccion('Pillar','Pillar').
-traduccion('Aparcar','Park').
-traduccion('Enhebrar','Thread').
-traduccion('Pinchar','Puncture').
-traduccion('Apartar','Set aside').
-traduccion('Enlazar','Link').
-traduccion('Pintar','Paint').
-traduccion('Apelar','Appeal').
-traduccion('Enojar','Anger').
-traduccion('Pisar','Step').
-traduccion('Apestar','Stink').
-traduccion('Enojarse','Get angry').
-traduccion('Planchar','Iron').
-traduccion('Aplastar','Smash').
-traduccion('Enredar','Tangle').
-traduccion('Planear',' plan').
-traduccion('Aplaudir','Applaud').
-traduccion('Enredarse','Tangle').
-traduccion('Plantar','Plant').
-traduccion('Aplazar','Postpone').
-traduccion('Ensanchar','Widen').
-traduccion('Plantear','Pose').
-traduccion('Aplicar','Apply').
-traduccion('Ensayar','Test').
-traduccion('Platicar','Talk').
-traduccion('Aportar','Contribute').
-traduccion('Enseñar','Teach').
-traduccion('Apoyar','Support').
-traduccion('Ensuciar','Dirty').
-traduccion('Portar','Carry').
-traduccion('Apreciar',' appreciate').
-traduccion('Enterar','Find out').
-traduccion('Posar','Pose').
-traduccion('Aprender',' learn').
-traduccion('Enterarse','Find out').
-traduccion('Practicar',' practice').
-traduccion('Apresurarse','Hurry').
-traduccion('Entrañar','Impress').
-traduccion('Pregonar','uting').
-traduccion('Aprovechar',' take advantage of').
-traduccion('Entrar','Get in').
-traduccion('Preguntar','Ask').
-traduccion('Apuntar','Point').
-traduccion('Entregar','Deliver').
-traduccion('Preguntarse','Wonder').
-traduccion('Apuntarse','Sign up').
-traduccion('Entrenar',' train').
-traduccion('Prender','Turn on').
-traduccion('Apurarse','Hurry').
-traduccion('Entrevistar',' interview').
-traduccion('Preocupar','Worry').
-traduccion('Arañar','Scratch').
-traduccion('Entusiasmar','Enthuse').
-traduccion('Preocuparse',' worry').
-traduccion('Arder','Burn').
-traduccion('Entusiasmarse','Get excited').
-traduccion('Preparar','Prepare').
-traduccion('Armar',' assemble').
-traduccion('Enviar','Submit').
-traduccion('Prepararse','Get prepared').
-traduccion('Arrancar','Tear').
-traduccion('Envidiar',' envy').
-traduccion('Presentar','Present').
-traduccion('Arrastrar','Drag').
-traduccion('Equivocar','Wrong').
-traduccion('Preservar','Preserve').
-traduccion('Arreglar','Fix').
-traduccion('Equivocarse','Make a mistake').
-traduccion('Presionar','Press').
-traduccion('Arrestar','Arrest').
-traduccion('Errar','Err').
-traduccion('Prestar','Lend').
-traduccion('Arriesgar','Risk').
-traduccion('Escalar','Climb').
-traduccion('Presumir',' show off').
-traduccion('Arrojar','Throw').
-traduccion('Escapar','Escape').
-traduccion('Pretender','Pretend').
-traduccion('Asar','Roast').
-traduccion('Escoger','Choose').
-traduccion('Privar','Deprive').
-traduccion('Asegurar','Ensure').
-traduccion('Esconder','Hide').
-traduccion('Proceder','Proceed').
-traduccion('Asesinar','Murder').
-traduccion('Esconderse','Hide').
-traduccion('Procesar','Process').
-traduccion('Asistir','Assist').
-traduccion('Escribir',' write').
-traduccion('Proclamar','Proclaim').
-traduccion('Asociar','Associate').
-traduccion('Escuchar','Hear').
-traduccion('Procurar',' procure').
-traduccion('Asomar','Show').
-traduccion('Escupir','Spit').
-traduccion('Programar','Program').
-traduccion('Asombrar','Amaze').
-traduccion('Esforzar','Strive').
-traduccion('Progresar','Progress').
-traduccion('Aspirar','Aspire').
-traduccion('Esparcir','Spread').
-traduccion('Prohibir','Ban').
-traduccion('Asumir','Assume').
-traduccion('Especializarse','Specialize').
-traduccion('Prolongar','Prolong').
-traduccion('Asustar','Frighten').
-traduccion('Especificar','Specify').
-traduccion('Prometer','Promise').
-traduccion('Asustarse','Get scared').
-traduccion('Esperar','Wait').
-traduccion('Pronunciar',' pronounce').
-traduccion('Atacar','Attack').
-traduccion('Espirar','Exhale').
-traduccion('Propagar','Spread').
-traduccion('Atañer','Attach').
-traduccion('Esquiar','Ski').
-traduccion('Proporcionar','Provide').
-traduccion('Atar','Tie').
-traduccion('Estacionar','Park').
-traduccion('Protagonizar','Starring').
-traduccion('Aterrizar',' land').
-traduccion('Estallar','Burst').
-traduccion('Proteger',' protect').
-traduccion('Atrapar','Catch').
-traduccion('Estancar','Stack').
-traduccion('Protestar',' protest').
-traduccion('Atrasar',' delay').
-traduccion('Estimar','Estimate').
-traduccion('Provocar',' provoke').
-traduccion('Atreverse','Dare').
-traduccion('Estimular',' stimulate').
-traduccion('Proyectar',' project').
-traduccion('Atribuir','Attribute').
-traduccion('Estirar',' stretch').
-traduccion('Publicar',' post').
-traduccion('Aturdir','Stun').
-traduccion('Estirarse','Stretch').
-traduccion('Pulir','Polish').
-traduccion('Aullar','Howl').
-traduccion('Esrnudar','Sneeze').
-traduccion('Pulsar','Press').
-traduccion('Aumentar','Increase').
-traduccion('Estrenar','Brand new').
-traduccion('Puntuar','Rate').
-traduccion('Autenticar','Authenticate').
-traduccion('Estresar',' stress').
-traduccion('Purificar','Purify').
-traduccion('Aurizar','Authorize').
-traduccion('Estropear','Spoil').
-traduccion('Quedar','Stay').
-traduccion('Avanzar','Move along').
-traduccion('Estudiar','Study').
-traduccion('Quedarse','Stay').
-traduccion('Averiguar','Find out').
-traduccion('Evacuar','Evacuate').
-traduccion('Quejarse',' complain').
-traduccion('Avisar','Warn').
-traduccion('Evadir','Evade').
-traduccion('Quemar','Burn').
-traduccion('Ayudar','Help').
-traduccion('Evaluar','Evaluate').
-traduccion('Quemarse','Burn').
-traduccion('Bailar','Dance').
-traduccion('Evitar','Avoid').
-traduccion('Quitar','Remove').
-traduccion('Bajar','Go down').
-traduccion('Evolucionar','Evolve').
-traduccion('Quitarse','Take off').
-traduccion('Balancear','Swing').
-traduccion('Exagerar','Exaggerate').
-traduccion('Radiar','Radiate').
-traduccion('Bañar','Bath').
-traduccion('Examinar','Examine').
-traduccion('Rascar','Scratch').
-traduccion('Bañarse','Bath').
-traduccion('Excavar','Dig').
-traduccion('Reaccionar','React').
-traduccion('Barajar','Shuffle').
-traduccion('Excitar','Excite').
-traduccion('Readmitir','Readmit').
-traduccion('Barrer','Sweep').
-traduccion('Exclamar','Exclaim').
-traduccion('Realizar','Perform').
-traduccion('Bastar','Be enough').
-traduccion('Excluir','Exclude').
-traduccion('Rebobinar','Rewind').
-traduccion('Batir','Shake').
-traduccion('Excusar','Excuse').
-traduccion('Rebuscar','Rummage').
-traduccion('Bautizar','Baptize').
-traduccion('Excusarse','Apologize').
-traduccion('Recargar','Recharge').
-traduccion('Beber',' drink').
-traduccion('Exhalar','Exhale').
-traduccion('Recelar','Fear').
-traduccion('Beneficiar','Benefit').
-traduccion('Exhibir',' exhibit').
-traduccion('Rechazar',' refuse').
-traduccion('Besar','Kiss').
-traduccion('Exigir','Demand').
-traduccion('Recibir',' receive').
-traduccion('Bloquear',' block').
-traduccion('Existir','Exist').
-traduccion('Reciclar','Recycle').
-traduccion('Bombear','Pump').
-traduccion('Experimentar',' experience').
-traduccion('Reclamar','Claim').
-traduccion('Bordar','Embroider').
-traduccion('Expirar','Expire').
-traduccion('Recoger','Collect').
-traduccion('Borrar','Delete').
-traduccion('Explicar','Explain').
-traduccion('Reconquistar','Reconquer').
-traduccion('Bostezar','Yawn').
-traduccion('Explorar',' explore').
-traduccion('Reconstruir','Rebuild').
-traduccion('Brillar','Shine').
-traduccion('Explotar','Exploit').
-traduccion('Recopilar','Collect').
-traduccion('Brincar','Jump').
-traduccion('Exportar',' export').
-traduccion('Recorrer','Travel').
-traduccion('Brindar','Offer').
-traduccion('Expresar','Express').
-traduccion('Rectificar','Rectify').
-traduccion('Bromear',' joke').
-traduccion('Exprimir','Squeeze').
-traduccion('Recuperar','Recover').
-traduccion('Broncear','Tan').
-traduccion('Expulsar','Expel').
-traduccion('Redactar','Write').
-traduccion('Bruñir','Burnish').
-traduccion('Extrañar','Miss').
-traduccion('Reemplazar','Replace').
-traduccion('Bucear','Diving').
-traduccion('Fabricar','Manufacture').
-traduccion('Refinar','Refine').
-traduccion('Bullir','Boil').
-traduccion('Facilitar',' ease').
-traduccion('Reflejar','Reflect').
-traduccion('Burlar','Outwit').
-traduccion('Facturar','Check in').
-traduccion('Reflexionar','Reflect').
-traduccion('Burlarse','Make fun').
-traduccion('Fallar','Fail').
-traduccion('Refrigerar','Refrigerate').
-traduccion('Buscar','Search').
-traduccion('Faltar','Lack').
-traduccion('Regalar','Give away').
-traduccion('Cagar','Shit').
-traduccion('Fascinar','Fascinate').
-traduccion('Regatear','Bargain').
-traduccion('Calcular','Calculate').
-traduccion('Fatigar','Fatigue').
-traduccion('Registrar',' register').
-traduccion('Caldear','Warm').
-traduccion('Felicitar',' congratulate').
-traduccion('Regresar',' return').
-traduccion('Calificar','Qualify').
-traduccion('Festejar','Celebrate').
-traduccion('Regular','Regular').
-traduccion('Callar','Shut up').
-traduccion('Fiar','Trust').
-traduccion('Rehusar','Refuse').
-traduccion('Callarse','Shut up').
-traduccion('Fiarse','Trust').
-traduccion('Reinar','Reign').
-traduccion('Calmar',' calm').
-traduccion('Figurar','Figure').
-traduccion('Relacionar','Relate').
-traduccion('Calmarse','Calm down').
-traduccion('Figurarse','Figure').
-traduccion('Relajarse','Chill out').
-traduccion('Calzar','Wear').
-traduccion('Fijar','Pin up').
-traduccion('Relatar','Tell').
-traduccion('Cambiar','Change').
-traduccion('Fijarse','Set').
-traduccion('Rellenar','Fill').
-traduccion('Caminar','Walk').
-traduccion('Filmar',' film').
-traduccion('Remar','Row').
-traduccion('Canalizar','Channel').
-traduccion('Filosofar','Philosophize').
-traduccion('Remitir','Refer').
-traduccion('Cancelar','Cancel').
-traduccion('Filtrar','Filter').
-traduccion('Renovar','Renovate').
-traduccion('Candar','Candar').
-traduccion('Finalizar','Finalize').
-traduccion('Renunciar','Give up').
-traduccion('Cansar','Tire out').
-traduccion('Financiar',' finance').
-traduccion('Reparar','Repair').
-traduccion('Cansarse','Get tired').
-traduccion('Firmar','Sign').
-traduccion('Repartir','Distribute').
-traduccion('Cantar',' sing').
-traduccion('Flirtear','Flirt').
-traduccion('Repasar','Review').
-traduccion('Capitular','Capitulate').
-traduccion('Flotar','Float up').
-traduccion('Replicar','Replicate').
-traduccion('Capturar','Capture').
-traduccion('Fluctuar','Fluctuate').
-traduccion('Reportar','Report').
-traduccion('Caracterizar','Characterize').
-traduccion('Fluir','Flow').
-traduccion('Representar','Represent').
-traduccion('Cargar','Load').
-traduccion('Fomentar','Foment').
-traduccion('Reprochar','Reproach').
-traduccion('Casar','Marry').
-traduccion('Formar',' form').
-traduccion('Resbalar','Slide').
-traduccion('Casarse','Get marry').
-traduccion('Formular','Formulate').
-traduccion('Reservar','Reserve').
-traduccion('Castigar','Punish').
-traduccion('Fortificar','Fortify').
-traduccion('Resfriarse',' catch a cold').
-traduccion('Categorizar','Categorize').
-traduccion('Fografiar',' phograph').
-traduccion('Resistir',' resist').
-traduccion('Causar','Cause').
-traduccion('Fracasar','Fail').
-traduccion('Respetar','Respect').
-traduccion('Cautivar','Captivate').
-traduccion('Frenar','Brake').
-traduccion('Respirar','Breathe').
-traduccion('Cavar','Dig').
-traduccion('Frotar','Rub').
-traduccion('Responder','Answer').
-traduccion('Cazar','Hunt').
-traduccion('Frustrar','Frustrate').
-traduccion('Restaurar','Resre').
-traduccion('Ceder','Give').
-traduccion('Fumar','Smoke').
-traduccion('Restituir','Return').
-traduccion('Celebrar','Celebrate').
-traduccion('Funcionar','Function').
-traduccion('Resultar','Result').
-traduccion('Cenar','Dine').
-traduccion('Fundar','Found').
-traduccion('Resumir','Summarize').
-traduccion('Censurar','Censor').
-traduccion('Fundir','Melt').
-traduccion('Retirar','Remove').
-traduccion('Centralizar','Centralize').
-traduccion('Fusionar','Fuse').
-traduccion('Retrasar',' delay').
-traduccion('Centrar','Center').
-traduccion('Ganar','Win').
-traduccion('Reunir','Gather').
-traduccion('Cepillar','Brush').
-traduccion('Gandulear','Lounge').
-traduccion('Reunirse','Get gether').
-traduccion('Cepillarse','Brush').
-traduccion('Garantizar',' guarantee').
-traduccion('Revelar',' reveal').
-traduccion('Cerrar','Close').
-traduccion('Gastar','Spend').
-traduccion('Revisar','Check').
-traduccion('Cesar','Cease').
-traduccion('Generalizar','Generalize').
-traduccion('Rezar','Pray').
-traduccion('Charlar','Chat').
-traduccion('Generar','Generate').
-traduccion('Robar','Steal').
-traduccion('Chatear','Chat').
-traduccion('Gestionar','Manage').
-traduccion('Rodear','Surround').
-traduccion('Chocar','Hit').
-traduccion('Girar','Turn').
-traduccion('Roer','Gnaw').
-traduccion('Chupar','Suck').
-traduccion('Glorificar','Glorify').
-traduccion('Roncar','Snore').
-traduccion('Cifrar','Code').
-traduccion('Golpear','Hit').
-traduccion('Saborear','Savor').
-traduccion('Circular','Circular').
-traduccion('Gozar','Enjoy').
-traduccion('Sabotear','Sabotage').
-traduccion('Citar','Quote').
-traduccion('Grabar','Record').
-traduccion('Sacar','Take').
-traduccion('Civilizar','Civilize').
-traduccion('Graduar','Graduate').
-traduccion('Saciar','Satiate').
-traduccion('Clarear','Lighten').
-traduccion('Graduarse','Graduate').
-traduccion('Sacrificar','Sacrifice').
-traduccion('Clarificar','Clarify').
-traduccion('Granizar','Hail').
-traduccion('Sacudir','Shake').
-traduccion('Clasificar','Sort out').
-traduccion('Gritar','Shout').
-traduccion('Salar',' Salt').
-traduccion('Clavar','Nail').
-traduccion('Gruñir','Snarl').
-traduccion('Saltar','Skip').
-traduccion('Cobrar','Charge').
-traduccion('Guardar','Save').
-traduccion('Saludar','Greet').
-traduccion('Cocinar','Cook').
-traduccion('Guiar','Guide').
-traduccion('Salvar','Save').
-traduccion('Codificar','Encode').
-traduccion('Gustar','Like').
-traduccion('Sanar','Heal').
-traduccion('Coger','Take').
-traduccion('Habitar','Live').
-traduccion('Satirizar','Satirize').
-traduccion('Coincidir','Coincide').
-traduccion('Habituar','Habituate').
-traduccion('Secar','Dry off').
-traduccion('Colaborar',' collaborate').
-traduccion('Hablar','Talk').
-traduccion('Secarse','Dry up').
-traduccion('Coleccionar','Collect').
-traduccion('Halagar','Flatter').
-traduccion('Seleccionar','Select').
-traduccion('Colocar','Place').
-traduccion('Hallar','Find').
-traduccion('Señalar','Point').
-traduccion('Colonizar','Colonize').
-traduccion('Hallarse','Be').
-traduccion('Separar','Pull apart').
-traduccion('Colorear','Color').
-traduccion('Hechizar','Bewitch').
-traduccion('Separarse','Break away').
-traduccion('Combatir','Fight').
-traduccion('Hipnotizar','Hypnotize').
-traduccion('Significar',' mean').
-traduccion('Combinar',' combine').
-traduccion('Huir','Run away').
-traduccion('Simbolizar','Symbolize').
-traduccion('Comentar','Comment').
-traduccion('Humillar','Humiliate').
-traduccion('Simpatizar','Sympathize').
-traduccion('Comer','Eat').
-traduccion('Hundir',' sink').
-traduccion('Simular','Simulate').
-traduccion('Comerciar','Trade').
-traduccion('Idealizar','Idealize').
-traduccion('Sincronizar','Sync up').
-traduccion('Cometer','Commit').
-traduccion('Identificar','Identify').
-traduccion('Sintetizar','Synthesize').
-traduccion('Comparar','Compare').
-traduccion('Ignorar','Ignore').
-traduccion('Sinnizar','Tune in').
-traduccion('Compartir','Share').
-traduccion('Iluminar',' illuminate').
-traduccion('Situar','Place').
-traduccion('Compensar','Make up for').
-traduccion('Ilustrar',' illustrate').
-traduccion('Sobrar','Over').
-traduccion('Compilar','Compile').
-traduccion('Imaginar','Imagine').
-traduccion('Sobreseer','Sobreseer').
-traduccion('Completar',' complete').
-traduccion('Imaginarse','Imagine').
-traduccion('Sobrevivir','Survive').
-traduccion('Complicar','Complicate').
-traduccion('Imitar','Imitate').
-traduccion('Socorrer','Help').
-traduccion('Comportar','Behave').
-traduccion('Implementar','Implement').
-traduccion('Solicitar','Apply for').
-traduccion('Comprar',' buy').
-traduccion('Implicar',' imply').
-traduccion('Solucionar','Solve').
-traduccion('Comprender','Understand').
-traduccion('Importar',' import').
-traduccion('Someter','Submit').
-traduccion('Comprimir','Compress').
-traduccion('Impresionar','Impress').
-traduccion('Soplar','Blow').
-traduccion('Comprometer','Compromise').
-traduccion('Imprimir',' print').
-traduccion('Soportar','Put up with').
-traduccion('Comunicar','Communicate').
-traduccion('Improvisar','Improvise').
-traduccion('Sorprender',' surprise').
-traduccion('Conceder','Grant').
-traduccion('Inaugurar','Inaugurate').
-traduccion('Sospechar','Suspect').
-traduccion('Concentrar','Concentrate').
-traduccion('Inclinar','Tilt').
-traduccion('Subir','Go up').
-traduccion('Condenar','Condemn').
-traduccion('Incorporar',' incorporate').
-traduccion('Subrayar','Underline').
-traduccion('Condicionar','Condition').
-traduccion('Incrementar','Increase').
-traduccion('Suceder','Happen').
-traduccion('Conectar','Connect').
-traduccion('Indicar','Indicate').
-traduccion('Sudar','Sweat').
-traduccion('Confiar','Trust').
-traduccion('Influir','Influence').
-traduccion('Sufrir','Suffer').
-traduccion('Configurar','Set up').
-traduccion('Informar','Report').
-traduccion('Sujetar','Hold').
-traduccion('Confirmar','Confirm').
-traduccion('Informarse','Inform').
-traduccion('Sumar','Add').
-traduccion('Confiscar','Confiscate').
-traduccion('Ingresar','Enter').
-traduccion('Superar','Overcome').
-traduccion('Confundir','Confuse').
-traduccion('Inhalar','Inhale').
-traduccion('Suplicar','Supplicate').
-traduccion('Confundirse','Get confused').
-traduccion('Iniciar','Start').
-traduccion('Suplir','Supply').
-traduccion('Congelar','Freeze').
-traduccion('Inmigrar','Immigrate').
-traduccion('Suprimir','Suppress').
-traduccion('Conjeturar','Guess').
-traduccion('Inmiscuirse','Interfere').
-traduccion('Surtir','Supply').
-traduccion('Conjugar','Combine').
-traduccion('Insertar','Insert').
-traduccion('Suspender','Lay off').
-traduccion('Conocerse','Meet').
-traduccion('Insistir','Insist').
-traduccion('Suspirar',' sigh').
-traduccion('Conquistar','Conquer').
-traduccion('Inspeccionar',' inspect').
-traduccion('Tañer','Ring').
-traduccion('Conservar','Keep').
-traduccion('Inspirar','Inspire').
-traduccion('Tapar','Cover').
-traduccion('Considerar',' consider').
-traduccion('Instalar','Install').
-traduccion('Tararear','Hum').
-traduccion('Consistir','Consist').
-traduccion('Instruir','Instruct').
-traduccion('Tardar','Take').
-traduccion('Consolidar','Consolidate').
-traduccion('Insultar',' insult').
-traduccion('Tartamudear','Stutter').
-traduccion('Constatar','Note').
-traduccion('Integrar',' integrate').
-traduccion('Tatuar','Tato').
-traduccion('Constituir','Constitute').
-traduccion('Intentar','Try').
-traduccion('Tejer',' knit').
-traduccion('Construir','Build').
-traduccion('Intercambiar',' exchange').
-traduccion('Telefonear','Call').
-traduccion('Consultar','Consult').
-traduccion('Interesar','Interest').
-traduccion('Temer','Fear').
-traduccion('Consumir','Consume').
-traduccion('Interpretar','Play').
-traduccion('Temperar','Temperate').
-traduccion('Contactar','Contact').
-traduccion('Interrogar','Question').
-traduccion('Templar','Temper').
-traduccion('Contaminar',' pollute').
-traduccion('Interrumpir','Interrupt').
-traduccion('Terminar','End up').
-traduccion('Contemplar','Contemplate').
-traduccion('Inundar','Flood').
-traduccion('Tintar','Tintar').
-traduccion('Contestar','Answer').
-traduccion('Invadir','Encroach').
-traduccion('Tirar','Throw').
-traduccion('Continuar','Continue').
-traduccion('Inventar','Invent').
-traduccion('Titular','Headline').
-traduccion('Contratar','Contract').
-traduccion('Investigar','Research').
-traduccion('car','Play').
-traduccion('Contribuir','Contribute').
-traduccion('Invitar','Invite').
+traduccion('abandonar','leave').
+traduccion('depender','depend').
+traduccion('maquillar','make up').
+traduccion('abarcar','encompass').
+traduccion('deplorar','deplore').
+traduccion('maquillarse','make up').
+traduccion('abatir','bring down').
+traduccion('depositar','deposit').
+traduccion('maravillar','wonder').
+traduccion('abonar','pay').
+traduccion('deprimir','depress').
+traduccion('marcar','mark').
+traduccion('abordar','approach').
+traduccion('derribar','shoot down').
+traduccion('marchar','march').
+traduccion('abortar','abort').
+traduccion('desaconsejar','advise against').
+traduccion('marcharse','leave').
+traduccion('abrazar','hug').
+traduccion('desafinar','challenge').
+traduccion('marear','marea').
+traduccion('abrigar','shelter').
+traduccion('desarrollar','develop').
+traduccion('matar','kill').
+traduccion('abrigarse','wrap').
+traduccion('desarrollarse','develop').
+traduccion('matricular','enroll').
+traduccion('abrochar','fasten').
+traduccion('desatar','tie off').
+traduccion('matricularse','enroll').
+traduccion('absorber','absorb').
+traduccion('desayunar','have breakfast').
+traduccion('maullar','meow').
+traduccion('aburrir','bore').
+traduccion('descansar','rest').
+traduccion('meditar','meditate').
+traduccion('aburrirse','get bored').
+traduccion('descargar','download').
+traduccion('mejorar','get better').
+traduccion('abusar','abuse').
+traduccion('descarrilar','derail').
+traduccion('memorizar','memorize').
+traduccion('acabar','finish').
+traduccion('desconectar','disconnect').
+traduccion('mencionar','mention').
+traduccion('acampar','camp').
+traduccion('desconfiar','distrust').
+traduccion('mendigar','beg').
+traduccion('acariciar','caress').
+traduccion('descongelar','defrost').
+traduccion('menguar','wane').
+traduccion('acceder','access').
+traduccion('descubrir','discover').
+traduccion('meter','put').
+traduccion('acelerar','speed ​​up').
+traduccion('desear',' wish').
+traduccion('mezclar','mix').
+traduccion('acentuar','accentuate').
+traduccion('desnudar','strip').
+traduccion('migrar','migrate').
+traduccion('aceptar',' accept').
+traduccion('despegar','take off').
+traduccion('mirar','look').
+traduccion('acercar','zoom in').
+traduccion('desplazar','displace').
+traduccion('mistificar','mystify').
+traduccion('acercarse','getting closer').
+traduccion('destacar','highlight').
+traduccion('modernizar','modernize').
+traduccion('aclarar','clear out').
+traduccion('destinar','target').
+traduccion('modificar','modify').
+traduccion('aclararse','clear up').
+traduccion('destruir','destroy').
+traduccion('modular','modular').
+traduccion('acoger','welcome').
+traduccion('desviar','divert').
+traduccion('mojar','wet').
+traduccion('acomodar','accommodate').
+traduccion('detectar','detect').
+traduccion('molar','molar').
+traduccion('acompañar','accompany').
+traduccion('deteriorar','deteriorate').
+traduccion('molestar','bother').
+traduccion('aconsejar','advise').
+traduccion('determinar','decide').
+traduccion('montar','mount').
+traduccion('acoplar','couple').
+traduccion('detestar','detest').
+traduccion('motivar',' motivate').
+traduccion('acortar','shorten').
+traduccion('devorar','devour').
+traduccion('movilizar','mobilize').
+traduccion('acosar',' bully').
+traduccion('dibujar',' draw').
+traduccion('mudar','move').
+traduccion('acostumbrar','accusm').
+traduccion('dictar','dictate').
+traduccion('mudarse','move').
+traduccion('acostumbrarse','get used').
+traduccion('diferenciar','differentiate').
+traduccion('multiplicar','multiply').
+traduccion('acrecentar','increase').
+traduccion('difundir','spread').
+traduccion('murmurar','murmur').
+traduccion('acreditar','accredit').
+traduccion('dimitir','resign').
+traduccion('mutilar','maim').
+traduccion('activar','activate').
+traduccion('dirigir','lead').
+traduccion('nadar','swim').
+traduccion('actualizar',' update').
+traduccion('discriminar','discriminate').
+traduccion('narrar','narrate').
+traduccion('actuar','act').
+traduccion('disculpar','excuse').
+traduccion('naufragar','sink').
+traduccion('acudir','go').
+traduccion('disculparse','apologize').
+traduccion('navegar','surf').
+traduccion('acusar',' accuse').
+traduccion('discutir','argue').
+traduccion('necesitar','need').
+traduccion('adaptar',' adapt').
+traduccion('diseñar','design').
+traduccion('negociar','negotiate').
+traduccion('adecuar','fit').
+traduccion('disfrazar','disguise').
+traduccion('neutralizar','neutralize').
+traduccion('adelantar','advance').
+traduccion('disfrutar','enjoy').
+traduccion('neviscar','neviscar').
+traduccion('adelgazar','slim down').
+traduccion('disimular','hide').
+traduccion('nombrar',' name').
+traduccion('adivinar','guess').
+traduccion('disminuir','decrease').
+traduccion('notar','notice').
+traduccion('adjuntar',' attach').
+traduccion('disparar','shoot').
+traduccion('notificar','notify').
+traduccion('administrar','manage').
+traduccion('disputar','dispute').
+traduccion('nublar','cloudy').
+traduccion('admirar',' admire').
+traduccion('distinguir','distinguish').
+traduccion('numerar','number').
+traduccion('admitir',' admit').
+traduccion('distribuir',' distribute').
+traduccion('nutrir','nourish').
+traduccion('adoptar','adopt').
+traduccion('divergir','diverge').
+traduccion('narrar','narrate').
+traduccion('adorar',' adore').
+traduccion('dividir','divide').
+traduccion('nublar','cloudy').
+traduccion('adornar','decorate').
+traduccion('divisar','divide').
+traduccion('obligar','obligate').
+traduccion('afectar',' affect').
+traduccion('divorciarse','divorce').
+traduccion('observar','observe').
+traduccion('afeitar',' shave').
+traduccion('divulgar','divulge').
+traduccion('ocultar','hide').
+traduccion('afeitarse','shave').
+traduccion('doblar','bend').
+traduccion('ocupar','occupy').
+traduccion('afinar','fine tune').
+traduccion('dominar',' dominate').
+traduccion('ocuparse','take care').
+traduccion('afirmar','say').
+traduccion('donar','donate').
+traduccion('ocurrir','occur').
+traduccion('afligir','afflict').
+traduccion('ducharse','get a shower').
+traduccion('odiar','hate').
+traduccion('aflojar','loosen up').
+traduccion('dudar','doubt').
+traduccion('ofender',' offend').
+traduccion('afrontar','front facing').
+traduccion('duplicar','double').
+traduccion('olvidar','forget').
+traduccion('agarrar','grab').
+traduccion('durar',' last').
+traduccion('omitir','skip').
+traduccion('agitar','shake').
+traduccion('echar','throw').
+traduccion('operar','operate').
+traduccion('agotar','exhaust').
+traduccion('echarse','lie').
+traduccion('opinar','review').
+traduccion('agradar','please').
+traduccion('edificar','build').
+traduccion('optar',' opt').
+traduccion('agregar','add').
+traduccion('editar','edit').
+traduccion('ordenar','order').
+traduccion('aguantar','endure').
+traduccion('educar','educate').
+traduccion('ordenar','order').
+traduccion('aguardar','wait').
+traduccion('efectuar','make').
+traduccion('organizar','organize').
+traduccion('ahogar','drown').
+traduccion('ejecutar','run').
+traduccion('orinar',' pee').
+traduccion('ahorcar','hang').
+traduccion('ejercer','exercise').
+traduccion('osar','dare').
+traduccion('ahorrar','save money').
+traduccion('ejercitar',' exercise').
+traduccion('oscilar','range').
+traduccion('ajustar','adjust').
+traduccion('elaborar',' elaborate').
+traduccion('oxidar','oxidize').
+traduccion('alargar',' enlarge').
+traduccion('elevar','raise').
+traduccion('paralizar','paralyze').
+traduccion('alarmar','alarm').
+traduccion('eliminar','remove').
+traduccion('parar','sp').
+traduccion('alborotar','disturb').
+traduccion('emancipar','emancipate').
+traduccion('pararse','sp').
+traduccion('alcanzar','reach').
+traduccion('embarazar','pregnant').
+traduccion('parlar','parlar').
+traduccion('alegar','plead').
+traduccion('embarcar','embark').
+traduccion('parpadear',' blink').
+traduccion('alegrar','gladden').
+traduccion('emborracharse','get drunk').
+traduccion('participar','take part').
+traduccion('alegrarse','rejoice').
+traduccion('embrollar','muddle').
+traduccion('partir','depart').
+traduccion('alejar','ward off').
+traduccion('embrujar','bewitch').
+traduccion('pasar','happen').
+traduccion('aligerar','lighten up').
+traduccion('emerger','emerge').
+traduccion('pasear','take a walk').
+traduccion('alimentar','feed').
+traduccion('emigrar','emigrate').
+traduccion('pasmar','asnish').
+traduccion('aliñar','dress').
+traduccion('emitir',' emit').
+traduccion('patear','kick').
+traduccion('aliviar','relieve').
+traduccion('empeñar','pawn').
+traduccion('patinar','rollerblading').
+traduccion('almacenar',' sck').
+traduccion('empeñarse','engage').
+traduccion('pedalear','pedal').
+traduccion('alojar','accommodate').
+traduccion('empezar','start').
+traduccion('pegar','paste').
+traduccion('alojarse',' stay').
+traduccion('emplear','use').
+traduccion('peinar','comb').
+traduccion('alquilar','rent').
+traduccion('emprender','undertake').
+traduccion('peinarse','combing').
+traduccion('alterar','alter').
+traduccion('empujar','push').
+traduccion('pelar','peel').
+traduccion('alumbrar','light').
+traduccion('enamorarse','fell in love').
+traduccion('pelear','fight').
+traduccion('alzar','raise').
+traduccion('encajar',' fit in').
+traduccion('pender','hang').
+traduccion('amar',' love').
+traduccion('encantar','love').
+traduccion('penetrar','penetrate').
+traduccion('amenazar',' threat').
+traduccion('encargar',' place an order').
+traduccion('percibir','perceive').
+traduccion('amenizar','enlighten').
+traduccion('enchufar','plug').
+traduccion('perder',' lose').
+traduccion('ampliar','enlarge').
+traduccion('encoger','shrink').
+traduccion('perdonar','forgive').
+traduccion('amplificar','amplify').
+traduccion('encuestar',' survey').
+traduccion('perfeccionar',' perfect').
+traduccion('analizar','analyze').
+traduccion('enfadar','anger').
+traduccion('perfumar','perfume').
+traduccion('anhelar','long').
+traduccion('enfadarse','get angry').
+traduccion('perjudicar','harm').
+traduccion('animar','encourage').
+traduccion('enfermar','sick').
+traduccion('permitir','allow').
+traduccion('anotar','annotate').
+traduccion('enfocar','focus').
+traduccion('persistir',' persist').
+traduccion('anticipar','anticipate').
+traduccion('enfriar','cool').
+traduccion('persuadir','persuade').
+traduccion('anular','cancel').
+traduccion('enganchar',' hook').
+traduccion('pesar',' weigh').
+traduccion('anunciar','announce').
+traduccion('engañar','cheat').
+traduccion('pescar','fishing').
+traduccion('añadir','add').
+traduccion('engañarse','deceive').
+traduccion('piar','tweet').
+traduccion('añorar','yearn').
+traduccion('engordar','fatten').
+traduccion('picar','chop').
+traduccion('apagar',' turn off').
+traduccion('engrasar','grease').
+traduccion('pillar','pillar').
+traduccion('aparcar','park').
+traduccion('enhebrar','thread').
+traduccion('pinchar','puncture').
+traduccion('apartar','set aside').
+traduccion('enlazar','link').
+traduccion('pintar','paint').
+traduccion('apelar','appeal').
+traduccion('enojar','anger').
+traduccion('pisar','step').
+traduccion('apestar','stink').
+traduccion('enojarse','get angry').
+traduccion('planchar','iron').
+traduccion('aplastar','smash').
+traduccion('enredar','tangle').
+traduccion('planear',' plan').
+traduccion('aplaudir','applaud').
+traduccion('enredarse','tangle').
+traduccion('plantar','plant').
+traduccion('aplazar','postpone').
+traduccion('ensanchar','widen').
+traduccion('plantear','pose').
+traduccion('aplicar','apply').
+traduccion('ensayar','test').
+traduccion('platicar','talk').
+traduccion('aportar','contribute').
+traduccion('enseñar','teach').
+traduccion('apoyar','support').
+traduccion('ensuciar','dirty').
+traduccion('portar','carry').
+traduccion('apreciar',' appreciate').
+traduccion('enterar','find out').
+traduccion('posar','pose').
+traduccion('aprender',' learn').
+traduccion('enterarse','find out').
+traduccion('practicar',' practice').
+traduccion('apresurarse','hurry').
+traduccion('entrañar','impress').
+traduccion('pregonar','uting').
+traduccion('aprovechar',' take advantage of').
+traduccion('entrar','get in').
+traduccion('preguntar','ask').
+traduccion('apuntar','point').
+traduccion('entregar','deliver').
+traduccion('preguntarse','wonder').
+traduccion('apuntarse','sign up').
+traduccion('entrenar',' train').
+traduccion('prender','turn on').
+traduccion('apurarse','hurry').
+traduccion('entrevistar',' interview').
+traduccion('preocupar','worry').
+traduccion('arañar','scratch').
+traduccion('entusiasmar','enthuse').
+traduccion('preocuparse',' worry').
+traduccion('arder','burn').
+traduccion('entusiasmarse','get excited').
+traduccion('preparar','prepare').
+traduccion('armar',' assemble').
+traduccion('enviar','submit').
+traduccion('prepararse','get prepared').
+traduccion('arrancar','tear').
+traduccion('envidiar',' envy').
+traduccion('presentar','present').
+traduccion('arrastrar','drag').
+traduccion('equivocar','wrong').
+traduccion('preservar','preserve').
+traduccion('arreglar','fix').
+traduccion('equivocarse','make a mistake').
+traduccion('presionar','press').
+traduccion('arrestar','arrest').
+traduccion('errar','err').
+traduccion('prestar','lend').
+traduccion('arriesgar','risk').
+traduccion('escalar','climb').
+traduccion('presumir',' show off').
+traduccion('arrojar','throw').
+traduccion('escapar','escape').
+traduccion('pretender','pretend').
+traduccion('asar','roast').
+traduccion('escoger','choose').
+traduccion('privar','deprive').
+traduccion('asegurar','ensure').
+traduccion('esconder','hide').
+traduccion('proceder','proceed').
+traduccion('asesinar','murder').
+traduccion('esconderse','hide').
+traduccion('procesar','process').
+traduccion('asistir','assist').
+traduccion('escribir',' write').
+traduccion('proclamar','proclaim').
+traduccion('asociar','associate').
+traduccion('escuchar','hear').
+traduccion('procurar',' procure').
+traduccion('asomar','show').
+traduccion('escupir','spit').
+traduccion('programar','program').
+traduccion('asombrar','amaze').
+traduccion('esforzar','strive').
+traduccion('progresar','progress').
+traduccion('aspirar','aspire').
+traduccion('esparcir','spread').
+traduccion('prohibir','ban').
+traduccion('asumir','assume').
+traduccion('especializarse','specialize').
+traduccion('prolongar','prolong').
+traduccion('asustar','frighten').
+traduccion('especificar','specify').
+traduccion('prometer','promise').
+traduccion('asustarse','get scared').
+traduccion('esperar','wait').
+traduccion('pronunciar',' pronounce').
+traduccion('atacar','attack').
+traduccion('espirar','exhale').
+traduccion('propagar','spread').
+traduccion('atañer','attach').
+traduccion('esquiar','ski').
+traduccion('proporcionar','provide').
+traduccion('atar','tie').
+traduccion('estacionar','park').
+traduccion('protagonizar','starring').
+traduccion('aterrizar',' land').
+traduccion('estallar','burst').
+traduccion('proteger',' protect').
+traduccion('atrapar','catch').
+traduccion('estancar','stack').
+traduccion('protestar',' protest').
+traduccion('atrasar',' delay').
+traduccion('estimar','estimate').
+traduccion('provocar',' provoke').
+traduccion('atreverse','dare').
+traduccion('estimular',' stimulate').
+traduccion('proyectar',' project').
+traduccion('atribuir','attribute').
+traduccion('estirar',' stretch').
+traduccion('publicar',' post').
+traduccion('aturdir','stun').
+traduccion('estirarse','stretch').
+traduccion('pulir','polish').
+traduccion('aullar','howl').
+traduccion('esrnudar','sneeze').
+traduccion('pulsar','press').
+traduccion('aumentar','increase').
+traduccion('estrenar','brand new').
+traduccion('puntuar','rate').
+traduccion('autenticar','authenticate').
+traduccion('estresar',' stress').
+traduccion('purificar','purify').
+traduccion('aurizar','authorize').
+traduccion('estropear','spoil').
+traduccion('quedar','stay').
+traduccion('avanzar','move along').
+traduccion('estudiar','study').
+traduccion('quedarse','stay').
+traduccion('averiguar','find out').
+traduccion('evacuar','evacuate').
+traduccion('quejarse',' complain').
+traduccion('avisar','warn').
+traduccion('evadir','evade').
+traduccion('quemar','burn').
+traduccion('ayudar','help').
+traduccion('evaluar','evaluate').
+traduccion('quemarse','burn').
+traduccion('bailar','dance').
+traduccion('evitar','avoid').
+traduccion('quitar','remove').
+traduccion('bajar','go down').
+traduccion('evolucionar','evolve').
+traduccion('quitarse','take off').
+traduccion('balancear','swing').
+traduccion('exagerar','exaggerate').
+traduccion('radiar','radiate').
+traduccion('bañar','bath').
+traduccion('examinar','examine').
+traduccion('rascar','scratch').
+traduccion('bañarse','bath').
+traduccion('excavar','dig').
+traduccion('reaccionar','react').
+traduccion('barajar','shuffle').
+traduccion('excitar','excite').
+traduccion('readmitir','readmit').
+traduccion('barrer','sweep').
+traduccion('exclamar','exclaim').
+traduccion('realizar','perform').
+traduccion('bastar','be enough').
+traduccion('excluir','exclude').
+traduccion('rebobinar','rewind').
+traduccion('batir','shake').
+traduccion('excusar','excuse').
+traduccion('rebuscar','rummage').
+traduccion('bautizar','baptize').
+traduccion('excusarse','apologize').
+traduccion('recargar','recharge').
+traduccion('beber',' drink').
+traduccion('exhalar','exhale').
+traduccion('recelar','fear').
+traduccion('beneficiar','benefit').
+traduccion('exhibir',' exhibit').
+traduccion('rechazar',' refuse').
+traduccion('besar','kiss').
+traduccion('exigir','demand').
+traduccion('recibir',' receive').
+traduccion('bloquear',' block').
+traduccion('existir','exist').
+traduccion('reciclar','recycle').
+traduccion('bombear','pump').
+traduccion('experimentar',' experience').
+traduccion('reclamar','claim').
+traduccion('bordar','embroider').
+traduccion('expirar','expire').
+traduccion('recoger','collect').
+traduccion('borrar','delete').
+traduccion('explicar','explain').
+traduccion('reconquistar','reconquer').
+traduccion('bostezar','yawn').
+traduccion('explorar',' explore').
+traduccion('reconstruir','rebuild').
+traduccion('brillar','shine').
+traduccion('explotar','exploit').
+traduccion('recopilar','collect').
+traduccion('brincar','jump').
+traduccion('exportar',' export').
+traduccion('recorrer','travel').
+traduccion('brindar','offer').
+traduccion('expresar','express').
+traduccion('rectificar','rectify').
+traduccion('bromear',' joke').
+traduccion('exprimir','squeeze').
+traduccion('recuperar','recover').
+traduccion('broncear','tan').
+traduccion('expulsar','expel').
+traduccion('redactar','write').
+traduccion('bruñir','burnish').
+traduccion('extrañar','miss').
+traduccion('reemplazar','replace').
+traduccion('bucear','diving').
+traduccion('fabricar','manufacture').
+traduccion('refinar','refine').
+traduccion('bullir','boil').
+traduccion('facilitar',' ease').
+traduccion('reflejar','reflect').
+traduccion('burlar','outwit').
+traduccion('facturar','check in').
+traduccion('reflexionar','reflect').
+traduccion('burlarse','make fun').
+traduccion('fallar','fail').
+traduccion('refrigerar','refrigerate').
+traduccion('buscar','search').
+traduccion('faltar','lack').
+traduccion('regalar','give away').
+traduccion('cagar','shit').
+traduccion('fascinar','fascinate').
+traduccion('regatear','bargain').
+traduccion('calcular','calculate').
+traduccion('fatigar','fatigue').
+traduccion('registrar',' register').
+traduccion('caldear','warm').
+traduccion('felicitar',' congratulate').
+traduccion('regresar',' return').
+traduccion('calificar','qualify').
+traduccion('festejar','celebrate').
+traduccion('regular','regular').
+traduccion('callar','shut up').
+traduccion('fiar','trust').
+traduccion('rehusar','refuse').
+traduccion('callarse','shut up').
+traduccion('fiarse','trust').
+traduccion('reinar','reign').
+traduccion('calmar',' calm').
+traduccion('figurar','figure').
+traduccion('relacionar','relate').
+traduccion('calmarse','calm down').
+traduccion('figurarse','figure').
+traduccion('relajarse','chill out').
+traduccion('calzar','wear').
+traduccion('fijar','pin up').
+traduccion('relatar','tell').
+traduccion('cambiar','change').
+traduccion('fijarse','set').
+traduccion('rellenar','fill').
+traduccion('caminar','walk').
+traduccion('filmar',' film').
+traduccion('remar','row').
+traduccion('canalizar','channel').
+traduccion('filosofar','philosophize').
+traduccion('remitir','refer').
+traduccion('cancelar','cancel').
+traduccion('filtrar','filter').
+traduccion('renovar','renovate').
+traduccion('candar','candar').
+traduccion('finalizar','finalize').
+traduccion('renunciar','give up').
+traduccion('cansar','tire out').
+traduccion('financiar',' finance').
+traduccion('reparar','repair').
+traduccion('cansarse','get tired').
+traduccion('firmar','sign').
+traduccion('repartir','distribute').
+traduccion('cantar',' sing').
+traduccion('flirtear','flirt').
+traduccion('repasar','review').
+traduccion('capitular','capitulate').
+traduccion('flotar','float up').
+traduccion('replicar','replicate').
+traduccion('capturar','capture').
+traduccion('fluctuar','fluctuate').
+traduccion('reportar','report').
+traduccion('caracterizar','characterize').
+traduccion('fluir','flow').
+traduccion('representar','represent').
+traduccion('cargar','load').
+traduccion('fomentar','foment').
+traduccion('reprochar','reproach').
+traduccion('casar','marry').
+traduccion('formar',' form').
+traduccion('resbalar','slide').
+traduccion('casarse','get marry').
+traduccion('formular','formulate').
+traduccion('reservar','reserve').
+traduccion('castigar','punish').
+traduccion('fortificar','fortify').
+traduccion('resfriarse',' catch a cold').
+traduccion('categorizar','categorize').
+traduccion('fografiar',' phograph').
+traduccion('resistir',' resist').
+traduccion('causar','cause').
+traduccion('fracasar','fail').
+traduccion('respetar','respect').
+traduccion('cautivar','captivate').
+traduccion('frenar','brake').
+traduccion('respirar','breathe').
+traduccion('cavar','dig').
+traduccion('frotar','rub').
+traduccion('responder','answer').
+traduccion('cazar','hunt').
+traduccion('frustrar','frustrate').
+traduccion('restaurar','resre').
+traduccion('ceder','give').
+traduccion('fumar','smoke').
+traduccion('restituir','return').
+traduccion('celebrar','celebrate').
+traduccion('funcionar','function').
+traduccion('resultar','result').
+traduccion('cenar','dine').
+traduccion('fundar','found').
+traduccion('resumir','summarize').
+traduccion('censurar','censor').
+traduccion('fundir','melt').
+traduccion('retirar','remove').
+traduccion('centralizar','centralize').
+traduccion('fusionar','fuse').
+traduccion('retrasar',' delay').
+traduccion('centrar','center').
+traduccion('ganar','win').
+traduccion('reunir','gather').
+traduccion('cepillar','brush').
+traduccion('gandulear','lounge').
+traduccion('reunirse','get gether').
+traduccion('cepillarse','brush').
+traduccion('garantizar',' guarantee').
+traduccion('revelar',' reveal').
+traduccion('cerrar','close').
+traduccion('gastar','spend').
+traduccion('revisar','check').
+traduccion('cesar','cease').
+traduccion('generalizar','generalize').
+traduccion('rezar','pray').
+traduccion('charlar','chat').
+traduccion('generar','generate').
+traduccion('robar','steal').
+traduccion('chatear','chat').
+traduccion('gestionar','manage').
+traduccion('rodear','surround').
+traduccion('chocar','hit').
+traduccion('girar','turn').
+traduccion('roer','gnaw').
+traduccion('chupar','suck').
+traduccion('glorificar','glorify').
+traduccion('roncar','snore').
+traduccion('cifrar','code').
+traduccion('golpear','hit').
+traduccion('saborear','savor').
+traduccion('circular','circular').
+traduccion('gozar','enjoy').
+traduccion('sabotear','sabotage').
+traduccion('citar','quote').
+traduccion('grabar','record').
+traduccion('sacar','take').
+traduccion('civilizar','civilize').
+traduccion('graduar','graduate').
+traduccion('saciar','satiate').
+traduccion('clarear','lighten').
+traduccion('graduarse','graduate').
+traduccion('sacrificar','sacrifice').
+traduccion('clarificar','clarify').
+traduccion('granizar','hail').
+traduccion('sacudir','shake').
+traduccion('clasificar','sort out').
+traduccion('gritar','shout').
+traduccion('salar',' salt').
+traduccion('clavar','nail').
+traduccion('gruñir','snarl').
+traduccion('saltar','skip').
+traduccion('cobrar','charge').
+traduccion('guardar','save').
+traduccion('saludar','greet').
+traduccion('cocinar','cook').
+traduccion('guiar','guide').
+traduccion('salvar','save').
+traduccion('codificar','encode').
+traduccion('gustar','like').
+traduccion('sanar','heal').
+traduccion('coger','take').
+traduccion('habitar','live').
+traduccion('satirizar','satirize').
+traduccion('coincidir','coincide').
+traduccion('habituar','habituate').
+traduccion('secar','dry off').
+traduccion('colaborar',' collaborate').
+traduccion('hablar','talk').
+traduccion('secarse','dry up').
+traduccion('coleccionar','collect').
+traduccion('halagar','flatter').
+traduccion('seleccionar','select').
+traduccion('colocar','place').
+traduccion('hallar','find').
+traduccion('señalar','point').
+traduccion('colonizar','colonize').
+traduccion('hallarse','be').
+traduccion('separar','pull apart').
+traduccion('colorear','color').
+traduccion('hechizar','bewitch').
+traduccion('separarse','break away').
+traduccion('combatir','fight').
+traduccion('hipnotizar','hypnotize').
+traduccion('significar',' mean').
+traduccion('combinar',' combine').
+traduccion('huir','run away').
+traduccion('simbolizar','symbolize').
+traduccion('comentar','comment').
+traduccion('humillar','humiliate').
+traduccion('simpatizar','sympathize').
+traduccion('comer','eat').
+traduccion('hundir',' sink').
+traduccion('simular','simulate').
+traduccion('comerciar','trade').
+traduccion('idealizar','idealize').
+traduccion('sincronizar','sync up').
+traduccion('cometer','commit').
+traduccion('identificar','identify').
+traduccion('sintetizar','synthesize').
+traduccion('comparar','compare').
+traduccion('ignorar','ignore').
+traduccion('sinnizar','tune in').
+traduccion('compartir','share').
+traduccion('iluminar',' illuminate').
+traduccion('situar','place').
+traduccion('compensar','make up for').
+traduccion('ilustrar',' illustrate').
+traduccion('sobrar','over').
+traduccion('compilar','compile').
+traduccion('imaginar','imagine').
+traduccion('sobreseer','sobreseer').
+traduccion('completar',' complete').
+traduccion('imaginarse','imagine').
+traduccion('sobrevivir','survive').
+traduccion('complicar','complicate').
+traduccion('imitar','imitate').
+traduccion('socorrer','help').
+traduccion('comportar','behave').
+traduccion('implementar','implement').
+traduccion('solicitar','apply for').
+traduccion('comprar',' buy').
+traduccion('implicar',' imply').
+traduccion('solucionar','solve').
+traduccion('comprender','understand').
+traduccion('importar',' import').
+traduccion('someter','submit').
+traduccion('comprimir','compress').
+traduccion('impresionar','impress').
+traduccion('soplar','blow').
+traduccion('comprometer','compromise').
+traduccion('imprimir',' print').
+traduccion('soportar','put up with').
+traduccion('comunicar','communicate').
+traduccion('improvisar','improvise').
+traduccion('sorprender',' surprise').
+traduccion('conceder','grant').
+traduccion('inaugurar','inaugurate').
+traduccion('sospechar','suspect').
+traduccion('concentrar','concentrate').
+traduccion('inclinar','tilt').
+traduccion('subir','go up').
+traduccion('condenar','condemn').
+traduccion('incorporar',' incorporate').
+traduccion('subrayar','underline').
+traduccion('condicionar','condition').
+traduccion('incrementar','increase').
+traduccion('suceder','happen').
+traduccion('conectar','connect').
+traduccion('indicar','indicate').
+traduccion('sudar','sweat').
+traduccion('confiar','trust').
+traduccion('influir','influence').
+traduccion('sufrir','suffer').
+traduccion('configurar','set up').
+traduccion('informar','report').
+traduccion('sujetar','hold').
+traduccion('confirmar','confirm').
+traduccion('informarse','inform').
+traduccion('sumar','add').
+traduccion('confiscar','confiscate').
+traduccion('ingresar','enter').
+traduccion('superar','overcome').
+traduccion('confundir','confuse').
+traduccion('inhalar','inhale').
+traduccion('suplicar','supplicate').
+traduccion('confundirse','get confused').
+traduccion('iniciar','start').
+traduccion('suplir','supply').
+traduccion('congelar','freeze').
+traduccion('inmigrar','immigrate').
+traduccion('suprimir','suppress').
+traduccion('conjeturar','guess').
+traduccion('inmiscuirse','interfere').
+traduccion('surtir','supply').
+traduccion('conjugar','combine').
+traduccion('insertar','insert').
+traduccion('suspender','lay off').
+traduccion('conocerse','meet').
+traduccion('insistir','insist').
+traduccion('suspirar',' sigh').
+traduccion('conquistar','conquer').
+traduccion('inspeccionar',' inspect').
+traduccion('tañer','ring').
+traduccion('conservar','keep').
+traduccion('inspirar','inspire').
+traduccion('tapar','cover').
+traduccion('considerar',' consider').
+traduccion('instalar','install').
+traduccion('tararear','hum').
+traduccion('consistir','consist').
+traduccion('instruir','instruct').
+traduccion('tardar','take').
+traduccion('consolidar','consolidate').
+traduccion('insultar',' insult').
+traduccion('tartamudear','stutter').
+traduccion('constatar','note').
+traduccion('integrar',' integrate').
+traduccion('tatuar','tato').
+traduccion('constituir','constitute').
+traduccion('intentar','try').
+traduccion('tejer',' knit').
+traduccion('construir','build').
+traduccion('intercambiar',' exchange').
+traduccion('telefonear','call').
+traduccion('consultar','consult').
+traduccion('interesar','interest').
+traduccion('temer','fear').
+traduccion('consumir','consume').
+traduccion('interpretar','play').
+traduccion('temperar','temperate').
+traduccion('contactar','contact').
+traduccion('interrogar','question').
+traduccion('templar','temper').
+traduccion('contaminar',' pollute').
+traduccion('interrumpir','interrupt').
+traduccion('terminar','end up').
+traduccion('contemplar','contemplate').
+traduccion('inundar','flood').
+traduccion('tintar','tintar').
+traduccion('contestar','answer').
+traduccion('invadir','encroach').
+traduccion('tirar','throw').
+traduccion('continuar','continue').
+traduccion('inventar','invent').
+traduccion('titular','headline').
+traduccion('contratar','contract').
+traduccion('investigar','research').
+traduccion('car','play').
+traduccion('contribuir','contribute').
+traduccion('invitar','invite').
 traduccion('lerar','lerate').
-traduccion('Controlar','Control').
-traduccion('Invocar','Invoke').
-traduccion('mar','Drink').
-traduccion('Conversar',' converse').
-traduccion('Inyectar','Inject').
-traduccion('rnear','Turning').
-traduccion('Convidar','Invite').
-traduccion('Jactarse','Boast').
-traduccion('ser','Cough').
-traduccion('Convivir','Live gether').
-traduccion('Joder','Fuck').
-traduccion('Trabajar',' work').
-traduccion('Cooperar','Cooperate').
-traduccion('Juntar','Put gether').
-traduccion('Tragar','Swallow').
-traduccion('Coordinar',' coordinate').
-traduccion('Juntarse','Get gether').
-traduccion('Traicionar','Betray').
-traduccion('Copiar','Copy').
-traduccion('Jurar','Swear').
-traduccion('Tramar','Hatch').
-traduccion('Coquetear',' flirt').
-traduccion('Justificar','Justify').
-traduccion('Tramitar','Process').
-traduccion('Coronar',' crown').
-traduccion('Juzgar','Judge').
-traduccion('Transformar','Transform').
-traduccion('Correr','Run').
-traduccion('Laborar','Labor').
-traduccion('Transmitir',' transmit').
-traduccion('Corresponder','Correspond').
-traduccion('Ladrar',' bark').
-traduccion('Transportar','Transport').
-traduccion('Corromper','Corrupt').
-traduccion('Lamentar',' regret').
-traduccion('Trasladar','Move').
-traduccion('Cortar','Cut').
-traduccion('Lamentarse','Lament').
-traduccion('Tratar','Try').
-traduccion('Cosechar','Harvest').
-traduccion('Lamer',' lick').
-traduccion('Trazar','Draw').
-traduccion('Coser','Sew').
-traduccion('Lanzar','Throw').
-traduccion('Tricotar','Knit').
-traduccion('Crear','Create').
-traduccion('Lastimar','Hurt').
-traduccion('Triunfar','Succeed').
-traduccion('Creer','Believe').
-traduccion('Lastimarse','Injure').
-traduccion('Tumbar','Overthrow').
-traduccion('Criar','Raise').
-traduccion('Latir','Beat').
-traduccion('Tumbarse','Lie down').
-traduccion('Criticar','Criticize').
-traduccion('Lavar',' wash').
-traduccion('Ubicar','Locate').
-traduccion('Crucificar','Crucify').
-traduccion('Lavarse','Wash up').
-traduccion('Unir','Link').
-traduccion('Crujir','Creak').
-traduccion('Leer','Read').
-traduccion('Untar','Spread').
-traduccion('Cruzar','Cross').
-traduccion('Legalizar','Legalize').
-traduccion('Urdir','Weave').
-traduccion('Cruzarse','Cross').
-traduccion('Legar','Bequeath').
-traduccion('Urgir','Urge').
-traduccion('Cuajar','Set').
-traduccion('Legitimar','Legitimize').
-traduccion('Usar','Use').
-traduccion('Cuantificar','Quantify').
-traduccion('Levantar','Lift up').
-traduccion('Utilizar','Use').
-traduccion('Cubrir','Cover').
-traduccion('Levantarse','Get up').
-traduccion('Vaciar','Empty').
-traduccion('Cuidar','Look after').
-traduccion('Levar','Weigh').
-traduccion('Vacilar','Hesitate').
-traduccion('Cuidarse','Take care').
-traduccion('Liar','Roll').
-traduccion('Vagar',' wander').
-traduccion('Culpar',' blame').
-traduccion('Liberar','Break free').
-traduccion('Valuar','Value').
-traduccion('Cultivar','Cultivate').
-traduccion('Licuar','Liquefy').
-traduccion('Variar',' vary').
-traduccion('Cumplir','Comply').
-traduccion('Limitar','Limit').
-traduccion('Vencer','Overcome').
-traduccion('Curar','Cure').
-traduccion('Limpiar','Clean').
-traduccion('Vendar','Bind up').
-traduccion('Danzar','Dance').
-traduccion('Liquidar','Liquidate').
-traduccion('Vender',' sell').
-traduccion('Dañar',' damage').
-traduccion('Listar',' list').
-traduccion('Venerar','Venerate').
-traduccion('Debatir',' debate').
-traduccion('Llamar',' call').
-traduccion('Verificar','Check').
-traduccion('Deber','Duty').
-traduccion('Llamarse','Called').
-traduccion('Viajar','Travel').
-traduccion('Decepcionar','Disappoint').
-traduccion('Llegar','Arrive').
-traduccion('Vibrar','Vibrate').
-traduccion('Decidir','Decide').
-traduccion('Llenar','Fill in').
-traduccion('Vigilar','Look out').
-traduccion('Declarar',' declare').
-traduccion('Llevar','Carry').
-traduccion('Vincular','Link').
-traduccion('Declinar','Decline').
-traduccion('Llevarse','Carry off').
-traduccion('Violar','Rape').
-traduccion('Decorar','Decorate').
-traduccion('Llorar','Cry').
-traduccion('Visitar',' visit').
-traduccion('Dedicar',' dedicate').
-traduccion('Lloviznar','Drizzle').
-traduccion('Vislumbrar','Glimpse').
-traduccion('Dedicarse','Dedicate').
-traduccion('Localizar',' locate').
-traduccion('Vivir','Live').
-traduccion('Definir','Define').
-traduccion('Lograr','Achieve').
-traduccion('Voltear','Flip').
-traduccion('Degustar','Taste').
-traduccion('Luchar',' struggle').
-traduccion('Vomitar','Barf').
-traduccion('Dejar','Leave').
-traduccion('Madrugar','Early morning').
-traduccion('Votar','Vote').
-traduccion('Delinquir','Delinquir').
-traduccion('Madurar',' mature').
-traduccion('Zambullirse','Dive').
-traduccion('Denigrar','Denigrate').
-traduccion('Manchar','Stain').
+traduccion('controlar','control').
+traduccion('invocar','invoke').
+traduccion('mar','drink').
+traduccion('conversar',' converse').
+traduccion('inyectar','inject').
+traduccion('rnear','turning').
+traduccion('convidar','invite').
+traduccion('jactarse','boast').
+traduccion('ser','cough').
+traduccion('convivir','live gether').
+traduccion('joder','fuck').
+traduccion('trabajar',' work').
+traduccion('cooperar','cooperate').
+traduccion('juntar','put gether').
+traduccion('tragar','swallow').
+traduccion('coordinar',' coordinate').
+traduccion('juntarse','get gether').
+traduccion('traicionar','betray').
+traduccion('copiar','copy').
+traduccion('jurar','swear').
+traduccion('tramar','hatch').
+traduccion('coquetear',' flirt').
+traduccion('justificar','justify').
+traduccion('tramitar','process').
+traduccion('coronar',' crown').
+traduccion('juzgar','judge').
+traduccion('transformar','transform').
+traduccion('correr','run').
+traduccion('laborar','labor').
+traduccion('transmitir',' transmit').
+traduccion('corresponder','correspond').
+traduccion('ladrar',' bark').
+traduccion('transportar','transport').
+traduccion('corromper','corrupt').
+traduccion('lamentar',' regret').
+traduccion('trasladar','move').
+traduccion('cortar','cut').
+traduccion('lamentarse','lament').
+traduccion('tratar','try').
+traduccion('cosechar','harvest').
+traduccion('lamer',' lick').
+traduccion('trazar','draw').
+traduccion('coser','sew').
+traduccion('lanzar','throw').
+traduccion('tricotar','knit').
+traduccion('crear','create').
+traduccion('lastimar','hurt').
+traduccion('triunfar','succeed').
+traduccion('creer','believe').
+traduccion('lastimarse','injure').
+traduccion('tumbar','overthrow').
+traduccion('criar','raise').
+traduccion('latir','beat').
+traduccion('tumbarse','lie down').
+traduccion('criticar','criticize').
+traduccion('lavar',' wash').
+traduccion('ubicar','locate').
+traduccion('crucificar','crucify').
+traduccion('lavarse','wash up').
+traduccion('unir','link').
+traduccion('crujir','creak').
+traduccion('leer','read').
+traduccion('untar','spread').
+traduccion('cruzar','cross').
+traduccion('legalizar','legalize').
+traduccion('urdir','weave').
+traduccion('cruzarse','cross').
+traduccion('legar','bequeath').
+traduccion('urgir','urge').
+traduccion('cuajar','set').
+traduccion('legitimar','legitimize').
+traduccion('usar','use').
+traduccion('cuantificar','quantify').
+traduccion('levantar','lift up').
+traduccion('utilizar','use').
+traduccion('cubrir','cover').
+traduccion('levantarse','get up').
+traduccion('vaciar','empty').
+traduccion('cuidar','look after').
+traduccion('levar','weigh').
+traduccion('vacilar','hesitate').
+traduccion('cuidarse','take care').
+traduccion('liar','roll').
+traduccion('vagar',' wander').
+traduccion('culpar',' blame').
+traduccion('liberar','break free').
+traduccion('valuar','value').
+traduccion('cultivar','cultivate').
+traduccion('licuar','liquefy').
+traduccion('variar',' vary').
+traduccion('cumplir','comply').
+traduccion('limitar','limit').
+traduccion('vencer','overcome').
+traduccion('curar','cure').
+traduccion('limpiar','clean').
+traduccion('vendar','bind up').
+traduccion('danzar','dance').
+traduccion('liquidar','liquidate').
+traduccion('vender',' sell').
+traduccion('dañar',' damage').
+traduccion('listar',' list').
+traduccion('venerar','venerate').
+traduccion('debatir',' debate').
+traduccion('llamar',' call').
+traduccion('verificar','check').
+traduccion('deber','duty').
+traduccion('llamarse','called').
+traduccion('viajar','travel').
+traduccion('decepcionar','disappoint').
+traduccion('llegar','arrive').
+traduccion('vibrar','vibrate').
+traduccion('decidir','decide').
+traduccion('llenar','fill in').
+traduccion('vigilar','look out').
+traduccion('declarar',' declare').
+traduccion('llevar','carry').
+traduccion('vincular','link').
+traduccion('declinar','decline').
+traduccion('llevarse','carry off').
+traduccion('violar','rape').
+traduccion('decorar','decorate').
+traduccion('llorar','cry').
+traduccion('visitar',' visit').
+traduccion('dedicar',' dedicate').
+traduccion('lloviznar','drizzle').
+traduccion('vislumbrar','glimpse').
+traduccion('dedicarse','dedicate').
+traduccion('localizar',' locate').
+traduccion('vivir','live').
+traduccion('definir','define').
+traduccion('lograr','achieve').
+traduccion('voltear','flip').
+traduccion('degustar','taste').
+traduccion('luchar',' struggle').
+traduccion('vomitar','barf').
+traduccion('dejar','leave').
+traduccion('madrugar','early morning').
+traduccion('votar','vote').
+traduccion('delinquir','delinquir').
+traduccion('madurar',' mature').
+traduccion('zambullirse','dive').
+traduccion('denigrar','denigrate').
+traduccion('manchar','stain').

@@ -1,4 +1,4 @@
-f= open('sustantivos.txt', 'r+', encoding="utf-8")
+f= open('mas.txt', 'r+', encoding="utf-8")
 esp=''
 ing=''
 i=0
@@ -7,10 +7,10 @@ flag= True
 
 
 
-w = open("BD sustantivos.txt","w",encoding="utf-8")
+w = open("mas BD adjetivos.txt","w",encoding="utf-8")
 
 while flag:
-    if i==425:
+    if i==121:
         break
     #elif i == 5:
  #       break
