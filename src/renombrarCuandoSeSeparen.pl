@@ -8,36 +8,32 @@ interfaz():-
 	writeln('1: Traducir de Inglés a Español.'),
 	writeln('2: Traducir de Español a Inglés.'),
 	read(Eleccion),
-	eleccion(Eleccion).
-
-eleccion(Eleccion):-
-	Eleccion = 1,
 	writeln('Escriba la frase a traducir: '),
 	read(Texto),
+	eleccion(Eleccion, Texto).
+
+eleccion(Eleccion, Texto):- %Para palabras solas
+	Eleccion = 1,
+	sub_atom(Texto, _, 1, 0, SignoPregunta),
+	dif('?', SignoPregunta),
 	ingles_español([Texto], Respuesta),
 	write_term(Respuesta, [fullstop(true)]),
 	!.
-eleccion(Eleccion):-
+eleccion(Eleccion, Texto):- %Para texto
 	Eleccion = 1,
-	writeln('Escriba la frase a traducir: '),
-	read(Texto),
 	atomic_list_concat(Lista, ' ', Texto),
 	ingles_español(Lista, Traduccion),
 	atomic_list_concat(Traduccion, ' ', Respuesta),
 	write_term(Respuesta, [fullstop(true)]),
 	!.
 
-eleccion(Eleccion):-
+eleccion(Eleccion, Texto):- %Para palabras solas
 	Eleccion = 2,
-	writeln('Escriba la frase a traducir: '),
-	read(Texto),
 	español_ingles([Texto], Respuesta),
 	write_term(Respuesta, [fullstop(true)]),
 	!.	
-eleccion(Eleccion):-
+eleccion(Eleccion, Texto):-
 	Eleccion = 2,
-	writeln('Escriba la frase a traducir: '),
-	read(Texto),
 	atomic_list_concat(Lista, ' ', Texto),
 	%español_ingles(Lista, Traduccion),
 	%atomic_list_concat(Traduccion, ' ', Respuesta),
@@ -65,20 +61,55 @@ verboRegular_desconjugador(InfinitivoRegular, Tiempo, Cantidad, Persona, Conjuga
 
 %%%%%%%%%%%%%%%%%%%%%%Sección para traducir de inglés a español.
 
-%TODO: Preguntas, ¿adverbios?, nombre
-
-ingles_español([Lista|Sobrante], Resultado):-
-	Sobrante = [],
+ingles_español(Lista, Resultado):-
 	traduccion(Resultado, Lista).
-	
+
+ingles_español(Lista, Resultado):-
+	quitar_signo_pregunta(Lista, Traducir),
+	pregunta(Traducir, Sobrante, Resultado1),
+	predicado(Sobrante, [], Resultado2),
+	append(Resultado1, Resultado2, ResultadoMedio),
+	agregar_signo_pregunta(Resultado, ResultadoMedio),
+	!.	
+                                                                                                                                                                                 	
 ingles_español(Lista, Resultado):- 
 	noPredicado(Lista,Sobrante, Resultado1), 
-	predicado(Sobrante,[], Resultado2),
+	predicado(Sobrante, [], Resultado2),
 	append(Resultado1, Resultado2, Resultado).
 
+pregunta([Ingles|Lista], Sobrante, Resultado):-
+	traduccion(Español, Ingles),
+	verbo(Cantidad, Persona, Lista, ListaTransitoria, Resultado1),
+	[Verbo|_] = Lista,
+	dif(Resultado1, [Verbo]),
+	sintagma_nominal(Cantidad, Persona, ListaTransitoria, Sobrante, Resultado2),
+	append(Resultado1, Resultado2, MedioResultado),
+	append([Español], MedioResultado, Resultado).
+	
+pregunta([Ingles|Lista], Sobrante, Resultado):-
+	Ingles = 'how',
+	traduccion(Español, 'howAlt'),
+	predicado(Lista, ListaTransitoria, Resultado1),
+	verbo(Cantidad, Persona, ListaTransitoria, ListaTransitoria2, Resultado2),
+	sintagma_nominal(Cantidad, Persona, ListaTransitoria2, Sobrante, Resultado3),
+	append([Español], Resultado1, MedioResultado1),
+	append(Resultado2, Resultado3, MedioResultado2),
+	append(MedioResultado1, MedioResultado2, Resultado).
+	
+quitar_signo_pregunta(ListaConSigno, ListaSinSigno):-
+	atomic_list_concat(ListaConSigno, ' ', TextoConSigno),
+	sub_atom(TextoConSigno, _, 1, 0, '?'),
+	atom_concat(TextoSinSigno, '?', TextoConSigno),
+	atomic_list_concat(ListaSinSigno, ' ', TextoSinSigno).
+	
+agregar_signo_pregunta(ListaConSigno, ListaSinSigno):-
+	atomic_list_concat(ListaSinSigno, ' ', TextoSinSigno),
+	atom_concat(TextoSinSigno, '?', TextoConSigno),
+	atomic_list_concat(ListaConSigno, ' ', TextoConSigno).
+
 noPredicado(Lista, Sobrante, Resultado):- 
-	sintagma_nominal(Cantidad, Persona, Lista, MediaLista, Resultado1),
-	verbo(Cantidad, Persona, MediaLista, Sobrante, Resultado2),
+	sintagma_nominal(Cantidad, Persona, Lista, ListaTransitoria, Resultado1),
+	verbo(Cantidad, Persona, ListaTransitoria, Sobrante, Resultado2),
 	append(Resultado1, Resultado2, Resultado).
 	
 predicado([], [], []).
@@ -99,10 +130,9 @@ sintagma_nominal(Cantidad, Persona, [_|Lista], Sobrante, [Articulo, Español]):-
 sintagma_nominal(Cantidad, Persona, Lista, Sobrante, [Español]):- %Caso de tercera persona sin artículo
 	nombre(_, Cantidad, Lista, Sobrante, Español),
 	Persona = 'tercera'.
-sintagma_nominal(_, _, [Sujeto|Sobrante], Sobrante, [Sujeto]):-
+sintagma_nominal(_, _, [Sujeto|Sobrante], Sobrante, [Sujeto]):- %Caso para nombres propios
 	[Verbo|_] = Sobrante,
 	verbo(_, _, [Verbo], [], Verificador), 	%Verificador sirve para saber si el verbo fue traducido, debe haber un verbo por el orden de la oración.
-	write(Verbo),write(Verificador),
 	dif([Verbo], Verificador).			%Ej: Sarah eats apple. Si es un nombre propio siempre le va a seguir un verbo. Solo singular.
 sintagma_nominal(_, _, [Articulo|Lista], Sobrante, [Articulo, Ingles]):- %Caso en que no se pueda traducir
 	[Ingles|Sobrante] = Lista.
@@ -155,10 +185,10 @@ verbo(Cantidad, Persona, [Ingles|Sobrante], Sobrante, [Conjugacion]):- %Caso de 
 	averiguarConjugacion(Español, 'pasado', Cantidad, Persona, Conjugacion).
 verbo(Cantidad, Persona, [Ingles|Sobrante], Sobrante, [Conjugacion]):- %Caso de ser pasado (version was)
 	Ingles = 'was',
-	averiguarConjugacion('estar', 'pasado', Cantidad, Persona, Conjugacion).
+	averiguarConjugacion('ser', 'pasado', Cantidad, Persona, Conjugacion).
 verbo(Cantidad, Persona, [Ingles|Sobrante], Sobrante, [Conjugacion]):- %Caso de ser pasado (version were)
 	Ingles = 'were',
-	averiguarConjugacion('estar', 'pasado', Cantidad, Persona, Conjugacion).
+	averiguarConjugacion('ser', 'pasado', Cantidad, Persona, Conjugacion).
 	
 verbo(_, _, [Ingles|Sobrante], Sobrante, [Conjugacion]):- %Caso de ser presente con 's' (He, She, It)
 	sub_atom(Ingles, 0, _, 1, Base),
@@ -172,10 +202,10 @@ verbo(_, _, [Ingles|Sobrante], Sobrante, [Conjugacion]):- %Caso de ser presente 
 	Conjugacion = 'estoy'.
 verbo(Cantidad, Persona, [Ingles|Sobrante], Sobrante, [Conjugacion]):- %Caso de ser presente is
 	Ingles = 'is',
-	averiguarConjugacion('estar', 'presente', Cantidad, Persona, Conjugacion).
+	averiguarConjugacion('ser', 'presente', Cantidad, Persona, Conjugacion).
 verbo(Cantidad, Persona, [Ingles|Sobrante], Sobrante, [Conjugacion]):- %Caso de ser presente are
 	Ingles = 'are',
-	averiguarConjugacion('estar', 'presente', Cantidad, Persona, Conjugacion).
+	averiguarConjugacion('ser', 'presente', Cantidad, Persona, Conjugacion).
 	
 verbo(_, _, [Ingles|Sobrante], Sobrante, [Ingles]). %Caso en el que el verbo no tenga traducción
 
@@ -199,6 +229,15 @@ verboRegular_conjugador(InfinitivoRegular, Tiempo, Cantidad, Persona, Conjugado)
 
 %Todo siempre empieza con traduccion().
 
+%Preguntas
+traduccion('¿Dónde', 'where').
+traduccion('¿Cuándo', 'when').
+traduccion('¿Qué', 'what').
+traduccion('¿Por qué', 'why').
+traduccion('¿Quién', 'who').
+traduccion('¿Cómo', 'how').
+traduccion('¿Cuán', 'howAlt').
+
 %Pronombres			Forma de los pronombres: traduccion('español', 'ingles'). 
 traduccion('yo','i').
 traduccion('usted','you').
@@ -206,12 +245,16 @@ traduccion('él','he').
 traduccion('ella','she').
 traduccion('nosotros','us').
 traduccion('ellos','they').
+traduccion('estos', 'these').
+traduccion('este', 'this').
+traduccion('eso', 'that').
+traduccion('esos', 'those').
 
 %Verbos				Forma de los verbos: traducción('español', 'ingles'). ****Sólo infinitivos
 traduccion('intentar', 'try').
 traduccion('morir', 'die').
 traduccion('correr', 'run').
-traduccion('estar', 'be').
+traduccion('ser', 'be').
 
 %Los siguientes verbos sólo pueden ser agregados a la lista si la traducción es únicamente de ingles a español ****Esto es para verbos que en ingles sean irregulares
 traduccion('tener', 'have').
@@ -247,6 +290,10 @@ pronombre('plural', 'tercera', 'ellos').
 %pronombre('masculino', 'plural', 'tercera', 'ellos').
 %pronombre('femenino', 'singular', 'tercera', 'ella').
 %pronombre('femenino', 'plural', 'tercera', 'ellas').
+pronombre('singular', 'tercera', 'este').
+pronombre('singular', 'tercera', 'eso').
+pronombre('plural', 'tercera', 'estos').
+pronombre('plural', 'tercera', 'esos').
 
 %Por defecto el programa elije ellos, para no tener 
 %que diferenciar entre masculino y femenino, comentar él/ellos 
@@ -259,14 +306,36 @@ verboIrregular('morir', 'presente', 'singular', 'primera', 'muero').
 verboIrregular('morir', 'presente', 'singular', 'segunda', 'muere').
 verboIrregular('morir', 'presente', 'singular', 'tercera', 'muere').
 
-verboIrregular('estar', 'pasado', 'singular', 'primera', 'estuve').
-verboIrregular('estar', 'pasado', 'singular', 'segunda', 'estuvo').
-verboIrregular('estar', 'pasado', 'singular', 'tercera', 'estuvo').
-verboIrregular('estar', 'pasado', 'plural', 'primera', 'estuvimos').
-verboIrregular('estar', 'pasado', 'plural', 'segunda', 'estuvieron').
-verboIrregular('estar', 'pasado', 'plural', 'tercera', 'estuvieron').
-verboIrregular('estar', 'presente', 'singular', 'segunda', 'está').
-verboIrregular('estar', 'presente', 'singular', 'tercera', 'está').
+verboIrregular('ser', 'pasado', 'singular', 'primera', 'fui').
+verboIrregular('ser', 'pasado', 'singular', 'segunda', 'fue').
+verboIrregular('ser', 'pasado', 'singular', 'tercera', 'fue').
+verboIrregular('ser', 'pasado', 'plural', 'primera', 'fuimos').
+verboIrregular('ser', 'pasado', 'plural', 'segunda', 'fueron').
+verboIrregular('ser', 'pasado', 'plural', 'tercera', 'fueron').
+verboIrregular('ser', 'presente', 'singular', 'primera', 'soy').
+verboIrregular('ser', 'presente', 'singular', 'segunda', 'es').
+verboIrregular('ser', 'presente', 'singular', 'tercera', 'es').
+verboIrregular('ser', 'presente', 'plural', 'primera', 'somos').
+verboIrregular('ser', 'presente', 'plural', 'segunda', 'son').
+verboIrregular('ser', 'presente', 'plural', 'tercera', 'son').
+
+verboIrregular('tener', 'pasado', 'singular', 'primera', 'tuve').
+verboIrregular('tener', 'pasado', 'singular', 'segunda', 'tuvo').
+verboIrregular('tener', 'pasado', 'singular', 'tercera', 'tuvo').
+verboIrregular('tener', 'pasado', 'plural', 'primera', 'tuvimos').
+verboIrregular('tener', 'pasado', 'plural', 'segunda', 'tuvieron').
+verboIrregular('tener', 'pasado', 'plural', 'tercera', 'tuvieron').
+verboIrregular('tener', 'presente', 'singular', 'primera', 'tengo').
+verboIrregular('tener', 'presente', 'singular', 'segunda', 'tiene').
+verboIrregular('tener', 'presente', 'singular', 'tercera', 'tiene').
+verboIrregular('tener', 'presente', 'plural', 'segunda', 'tienen').
+verboIrregular('tener', 'presente', 'plural', 'tercera', 'tienen').
+verboIrregular('tener', 'futuro', 'singular', 'primera', 'tendré').
+verboIrregular('tener', 'futuro', 'singular', 'segunda', 'tendrá').
+verboIrregular('tener', 'futuro', 'singular', 'tercera', 'tendrá').
+verboIrregular('tener', 'futuro', 'plural', 'primera', 'tendremos').
+verboIrregular('tener', 'futuro', 'plural', 'segunda', 'tendrán').
+verboIrregular('tener', 'futuro', 'plural', 'tercera', 'tendrán').
 
 %%Terminados en -ar
 verboRegular('ar', 'pasado', 'singular', 'primera', 'é').
