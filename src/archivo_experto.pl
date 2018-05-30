@@ -1,6 +1,3 @@
-%%Espanol es la oracion en ese idioma, de igual manera con el Ingles
-%traducir(Espanol, Ingles):- .
-
 %%%Interfaz
 
 interfaz():-
