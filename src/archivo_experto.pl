@@ -455,7 +455,7 @@ traduccion('aguardar','wait').
 traduccion('efectuar','make').
 traduccion('organizar','organize').
 traduccion('ahogar','drown').
-traduccion('ejecutar','run').
+traduccion('correr','run').
 traduccion('orinar',' pee').
 traduccion('ahorcar','hang').
 traduccion('ejercer','exercise').
@@ -844,6 +844,7 @@ traduccion('calzar','wear').
 traduccion('fijar','pin up').
 traduccion('relatar','tell').
 traduccion('cambiar','change').
+traduccion('manzana','apple').
 traduccion('fijarse','set').
 traduccion('rellenar','fill').
 traduccion('caminar','walk').
