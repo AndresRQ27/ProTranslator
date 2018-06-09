@@ -58,10 +58,10 @@ verboRegular_desconjugador(InfinitivoRegular, Tiempo, Cantidad, Persona, Conjuga
 
 %%%%%%%%%%%%%%%%%%%%%%Sección para traducir de inglés a español.
 
-ingles_español(Lista, Resultado):-
+ingles_español(Lista, Resultado):- %Traduce una palabra
 	traduccion(Resultado, Lista).
 
-ingles_español(Lista, Resultado):-
+ingles_español(Lista, Resultado):- % Traduce una pregunta
 	quitar_signo_pregunta(Lista, Traducir),
 	pregunta(Traducir, Sobrante, Resultado1),
 	predicado(Sobrante, [], Resultado2),
@@ -69,7 +69,7 @@ ingles_español(Lista, Resultado):-
 	agregar_signo_pregunta(Resultado, ResultadoMedio),
 	!.	
                                                                                                                                                                                  	
-ingles_español(Lista, Resultado):- 
+ingles_español(Lista, Resultado):- % Traduce una oración simple
 	noPredicado(Lista,Sobrante, Resultado1), 
 	predicado(Sobrante, [], Resultado2),
 	append(Resultado1, Resultado2, Resultado).
@@ -89,6 +89,16 @@ pregunta([Ingles|Lista], Sobrante, Resultado):-
 	predicado(Lista, ListaTransitoria, Resultado1),
 	verbo(Cantidad, Persona, ListaTransitoria, ListaTransitoria2, Resultado2),
 	sintagma_nominal(Cantidad, Persona, ListaTransitoria2, Sobrante, Resultado3),
+	append([Español], Resultado1, MedioResultado1),
+	append(Resultado2, Resultado3, MedioResultado2),
+	append(MedioResultado1, MedioResultado2, Resultado).
+	
+pregunta([Ingles|Lista], Sobrante, Resultado):-
+	Ingles = 'which',
+	traduccion(Español, 'which'),
+	predicado(Lista, ListaTransitoria, Resultado1),
+	sintagma_nominal(Cantidad, Persona, ListaTransitoria, ListaTransitoria2, Resultado2),
+	verbo(Cantidad, Persona, ListaTransitoria2, Sobrante, Resultado3),
 	append([Español], Resultado1, MedioResultado1),
 	append(Resultado2, Resultado3, MedioResultado2),
 	append(MedioResultado1, MedioResultado2, Resultado).
@@ -228,6 +238,7 @@ verboRegular_conjugador(InfinitivoRegular, Tiempo, Cantidad, Persona, Conjugado)
 
 %Preguntas
 traduccion('¿Dónde', 'where').
+traduccion('¿Cuál', 'which').
 traduccion('¿Cuándo', 'when').
 traduccion('¿Qué', 'what').
 traduccion('¿Por qué', 'why').
@@ -1293,6 +1304,7 @@ traduccion('madurar',' mature').
 traduccion('zambullirse','dive').
 traduccion('denigrar','denigrate').
 traduccion('manchar','stain').
+traduccion('manejar','drive').
 
 %Los siguientes verbos sólo pueden ser agregados a la lista si la traducción es únicamente de ingles a español ****Esto es para verbos que en ingles sean irregulares
 traduccion('tener', 'have').
